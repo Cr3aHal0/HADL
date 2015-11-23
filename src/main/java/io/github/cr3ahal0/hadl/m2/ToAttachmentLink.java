@@ -9,6 +9,10 @@ public class ToAttachmentLink extends AttachmentLink {
 
     private ToRole role;
 
+    public ToAttachmentLink() {
+
+    }
+
     public void setFrom(ToRole role) {
         this.role = role;
     }

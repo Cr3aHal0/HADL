@@ -9,6 +9,10 @@ public class FromAttachmentLink extends AttachmentLink {
 
     private FromRole role;
 
+    public FromAttachmentLink() {
+
+    }
+
     public void setFrom(ProvidedPort port) {
         this.port = port;
     }

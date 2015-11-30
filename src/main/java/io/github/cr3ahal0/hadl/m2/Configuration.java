@@ -1,5 +1,6 @@
 package io.github.cr3ahal0.hadl.m2;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -39,6 +40,22 @@ public class Configuration extends AbstractComponent {
      */
     private Set<AttachmentLink> attachments;
 
+    public Configuration(String name) {
+        super(name);
+
+        requiredPorts = new HashSet<RequiredPort>();
+        providedPorts = new HashSet<ProvidedPort>();
+        components = new HashSet<AbstractComponent>();
+        requiredBindings = new HashSet<RequiredBindingLink>();
+        providedBindings = new HashSet<ProvidedBindingLink>();
+    }
+
+    @Override
+    public boolean handleRequest(Request request) throws Exception {
+        //TODO
+        return false;
+    }
+
 
     /**
      * add a RequiredPort
@@ -46,6 +63,7 @@ public class Configuration extends AbstractComponent {
      */
     public void addRequiredPort(RequiredPort requiredPort) {
         requiredPorts.add(requiredPort);
+        requiredPort.setParent(this);
     }
 
     /**
@@ -62,6 +80,7 @@ public class Configuration extends AbstractComponent {
      */
     public void addProvidedPort(ProvidedPort providedPort) {
         providedPorts.add(providedPort);
+        providedPort.setParent(this);
     }
 
     /**

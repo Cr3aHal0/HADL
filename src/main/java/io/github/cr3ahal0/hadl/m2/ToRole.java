@@ -6,7 +6,8 @@ package io.github.cr3ahal0.hadl.m2;
 public class ToRole extends Role {
 
     @Override
-    public void onReceive() {
-
+    public void onReceive(Request request) {
+        //Just notify listeners as we're just made to initiate communication
+        notifyObservers(request);
     }
 }

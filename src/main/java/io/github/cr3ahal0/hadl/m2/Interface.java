@@ -7,6 +7,16 @@ import java.util.Observable;
  */
 public abstract class Interface extends Observable {
 
-    public abstract void onReceive();
+    private AbstractComponent parent;
+
+    public void setParent(AbstractComponent parent) {
+        this.parent = parent;
+    }
+
+    protected AbstractComponent getParent() {
+        return this.parent;
+    }
+
+    public abstract void onReceive(Request request) throws Exception;
 
 }

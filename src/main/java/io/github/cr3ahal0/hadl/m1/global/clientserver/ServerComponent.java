@@ -9,7 +9,8 @@ import io.github.cr3ahal0.hadl.m2.RequiredPort;
  */
 public class ServerComponent extends Component {
 
-    public ServerComponent() {
+    public ServerComponent(String name) {
+        super(name);
 
         RequiredPort r1 = new RequiredPort();
         RequiredPort r2 = new RequiredPort();

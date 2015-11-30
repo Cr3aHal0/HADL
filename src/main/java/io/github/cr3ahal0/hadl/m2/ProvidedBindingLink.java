@@ -1,5 +1,7 @@
 package io.github.cr3ahal0.hadl.m2;
 
+import java.util.Observable;
+
 /**
  * Created by E130110Z on 23/11/15.
  */
@@ -18,6 +20,13 @@ public class ProvidedBindingLink extends BindingLink {
     public ProvidedBindingLink(ProvidedPort configurationProvidedPort, ProvidedPort componentProvidedPort) {
         this.configurationProvidedPort = configurationProvidedPort;
         this.componentProvidedPort = componentProvidedPort;
+
+        this.componentProvidedPort.addObserver(this);
+    }
+
+    @Override
+    public void update(Observable observable, Object o) {
+        this.configurationProvidedPort.onReceive((Request)o);
     }
 
 }

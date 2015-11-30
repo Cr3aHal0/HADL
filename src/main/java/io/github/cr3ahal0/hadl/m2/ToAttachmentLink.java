@@ -14,10 +14,12 @@ public class ToAttachmentLink extends AttachmentLink {
     public ToAttachmentLink(ToRole role, RequiredPort port) {
         this.role = role;
         this.port = port;
+
+        this.role.addObserver(this);
     }
 
     @Override
     public void update(Observable o, Object arg) {
-
+        this.port.onReceive((Request)arg);
     }
 }

@@ -1,5 +1,6 @@
 package io.github.cr3ahal0.hadl.m2;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -27,6 +28,27 @@ public class Component extends AbstractComponent {
      */
     private Set<Service> services;
 
+    public Component(String name) {
+        super(name);
+
+        technicalConstraints = new HashSet<String>();
+        requiredPorts = new HashSet<RequiredPort>();
+        providedPorts = new HashSet<ProvidedPort>();
+        services = new HashSet<Service>();
+    }
+
+    @Override
+    public boolean handleRequest(Request request) throws Exception {
+
+        if (request.getTarget().getName().equals(getName())) {
+            //We better check some things
+            //...
+
+            return true;
+        }
+        return false;
+    }
+
     /**
      * add a technicalConstraint
      * @param technicalConstraint
@@ -49,6 +71,7 @@ public class Component extends AbstractComponent {
      */
     public void  addRequiredPort(RequiredPort requiredPort) {
         requiredPorts.add(requiredPort);
+        requiredPort.setParent(this);
     }
 
     /**
@@ -65,6 +88,7 @@ public class Component extends AbstractComponent {
      */
     public void addProvidedPort(ProvidedPort providedPort) {
         providedPorts.add(providedPort);
+        providedPort.setParent(this);
     }
 
     /**
@@ -90,4 +114,5 @@ public class Component extends AbstractComponent {
     public void removeService(Service service) {
         services.remove(service);
     }
+
 }

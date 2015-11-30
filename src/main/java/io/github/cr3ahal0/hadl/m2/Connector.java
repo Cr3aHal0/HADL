@@ -26,12 +26,20 @@ public class Connector extends AbstractComponent {
     /**
      * constructor
      */
-    public Connector() {
+    public Connector(String name) {
+
+        super(name);
 
         fromRoles = new HashSet<FromRole>();
         toRoles = new HashSet<ToRole>();
         simpleGlues = new HashSet<SimpleGlue>();
 
+    }
+
+    @Override
+    public boolean handleRequest(Request request) throws Exception {
+        //Default behaviour is to let requests crossing a connector
+        return false;
     }
 
     /**
@@ -40,6 +48,7 @@ public class Connector extends AbstractComponent {
      */
     public void addFromRole(FromRole fromRole) {
         fromRoles.add(fromRole);
+        fromRole.setParent(this);
     }
 
     /**
@@ -56,6 +65,7 @@ public class Connector extends AbstractComponent {
      */
     public void addToRole(ToRole toRole) {
         toRoles.add(toRole);
+        toRole.setParent(this);
     }
 
     /**

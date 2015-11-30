@@ -7,10 +7,11 @@ import io.github.cr3ahal0.hadl.m2.*;
  */
 public class ServerConfiguration extends Configuration {
 
-    public ServerConfiguration () {
+    public ServerConfiguration (String name) {
+        super(name);
 
         // From ConnectionManager ...
-        ConnectionManager connectionManager = new ConnectionManager();
+        ConnectionManager connectionManager = new ConnectionManager("Connection Manager");
 
         ProvidedPort securityCheckProvidedPort = new ProvidedPort();
         RequiredPort securityCheckRequiredPort = new RequiredPort();
@@ -18,7 +19,7 @@ public class ServerConfiguration extends Configuration {
         connectionManager.addRequiredPort(securityCheckRequiredPort);
 
         // ClearanceRequest Connector
-        Connector clearanceRequest = new Connector();
+        Connector clearanceRequest = new Connector("Clearance Request");
         addComponent(clearanceRequest);
 
         //From role --> [
@@ -50,7 +51,7 @@ public class ServerConfiguration extends Configuration {
         clearanceRequest.addSimpleGlue(clearanceRequestSimpleGlue2);
 
         // ... To SecurityManager ...
-        SecurityManager securityManager = new SecurityManager();
+        SecurityManager securityManager = new SecurityManager("Security Manager");
         addComponent(securityManager);
 
         RequiredPort securityAuthRequiredPort = new RequiredPort();
@@ -73,7 +74,7 @@ public class ServerConfiguration extends Configuration {
         securityManager.addRequiredPort(checkQueryRequiredPort);
 
         // SecurityQuery Connector
-        Connector securityQuery = new Connector();
+        Connector securityQuery = new Connector("Security Query");
         addComponent(securityQuery);
 
         //From role --> [
@@ -105,13 +106,16 @@ public class ServerConfiguration extends Configuration {
         addAttachmentLink(checkQueryToAttachment);
 
         // ... To database
-        Database database = new Database();
+        Database database = new Database("Database");
         addComponent(database);
 
         ProvidedPort securityManagementProvidedPort = new ProvidedPort();
         RequiredPort securityManagementRequiredPort = new RequiredPort();
         database.addProvidedPort(securityManagementProvidedPort);
         database.addRequiredPort(securityManagementRequiredPort);
+
+        ExecuteQueryService service = new ExecuteQueryService();
+        database.addService(service);
 
         //Database --> Attachment
         FromAttachmentLink securityManagementFromAttachment = new FromAttachmentLink(securityManagementProvidedPort, securityQueryFromRole2);
@@ -122,7 +126,7 @@ public class ServerConfiguration extends Configuration {
         addAttachmentLink(securityManagementToAttachment);
 
         // SecurityQuery Connector
-        Connector sqlQuery = new Connector();
+        Connector sqlQuery = new Connector("SQL Query");
         addComponent(sqlQuery);
 
         //From role --> [

@@ -7,4 +7,7 @@ import io.github.cr3ahal0.hadl.m2.Component;
  */
 public class ConnectionManager extends Component {
 
+    public ConnectionManager(String name) {
+        super(name);
+    }
 }

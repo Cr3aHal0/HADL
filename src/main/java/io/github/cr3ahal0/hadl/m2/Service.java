@@ -5,5 +5,6 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public abstract class Service extends Interface {
 
+    public abstract Object onCalled();
 
 }

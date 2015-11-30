@@ -11,10 +11,11 @@ import java.util.Set;
  */
 public class GlobalConfiguration extends Configuration {
 
-    public GlobalConfiguration() {
+    public GlobalConfiguration(String name) {
+        super(name);
 
         //Client Server Configuration
-        ClientServerConfiguration csc = new ClientServerConfiguration();
+        ClientServerConfiguration csc = new ClientServerConfiguration("Client Server Configuration");
         addComponent(csc);
 
         //Required ports
@@ -24,7 +25,7 @@ public class GlobalConfiguration extends Configuration {
         ProvidedPort[] cpp = (ProvidedPort[])csc.getProvidedPorts().toArray();
 
         //Connector
-        Connector c = new Connector();
+        Connector c = new Connector("Client-Server to Server Configuration");
         addComponent(c);
 
         //From role --> [
@@ -51,7 +52,7 @@ public class GlobalConfiguration extends Configuration {
         c.addSimpleGlue(g2);
 
         //ServerConfiguration
-        ServerConfiguration sc = new ServerConfiguration();
+        ServerConfiguration sc = new ServerConfiguration("Server Configuration");
         addComponent(sc);
 
         //Required ports
@@ -66,10 +67,7 @@ public class GlobalConfiguration extends Configuration {
         addAttachmentLink(fa1);
 
         //Connector -> ServerConf
-        ToAttachmentLink fa2 = new ToAttachmentLink();
-        fa2.setFrom(tr1);
-        fa2.setTo(srp[0]);
-
+        ToAttachmentLink fa2 = new ToAttachmentLink(tr1, srp[0]);
         addAttachmentLink(fa2);
 
         //ServerConf -> Connector
@@ -78,10 +76,7 @@ public class GlobalConfiguration extends Configuration {
         addAttachmentLink(fa3);
 
         //Connector -> ClientServer
-        ToAttachmentLink fa4 = new ToAttachmentLink();
-        fa2.setFrom(tr2);
-        fa2.setTo(crp[0]);
-
+        ToAttachmentLink fa4 = new ToAttachmentLink(tr2, crp[0]);
         addAttachmentLink(fa4);
     }
 }

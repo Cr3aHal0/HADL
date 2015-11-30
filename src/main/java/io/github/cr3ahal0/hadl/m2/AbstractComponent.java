@@ -5,14 +5,15 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public abstract class AbstractComponent {
 
-    protected String name;
+    String name;
+
+    public AbstractComponent(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    public abstract boolean handleRequest(Request request) throws Exception;
 }

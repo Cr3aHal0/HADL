@@ -10,7 +10,8 @@ import io.github.cr3ahal0.hadl.m2.ToRole;
  */
 public class RPCConnector extends Connector {
 
-    public RPCConnector() {
+    public RPCConnector(String name) {
+        super(name);
 
     }
 

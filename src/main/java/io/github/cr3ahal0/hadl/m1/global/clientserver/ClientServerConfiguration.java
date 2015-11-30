@@ -7,7 +7,8 @@ import io.github.cr3ahal0.hadl.m2.*;
  */
 public class ClientServerConfiguration extends Configuration {
 
-    public ClientServerConfiguration() {
+    public ClientServerConfiguration(String name) {
+        super(name);
 
         //Conf provider port  ] -->
         ProvidedPort pp = new ProvidedPort();
@@ -18,7 +19,7 @@ public class ClientServerConfiguration extends Configuration {
         this.addRequiredPort(rp);
 
         //Client component
-        ClientComponent client = new ClientComponent();
+        ClientComponent client = new ClientComponent("Client");
         addComponent(client);
 
         RequiredPort cr1 = new RequiredPort();
@@ -32,7 +33,7 @@ public class ClientServerConfiguration extends Configuration {
         client.addRequiredPort(cr2);
 
         //Server
-        ServerComponent server = new ServerComponent();
+        ServerComponent server = new ServerComponent("Server");
         addComponent(server);
         RequiredPort sr1 = new RequiredPort();
         RequiredPort sr2 = new RequiredPort();
@@ -45,7 +46,7 @@ public class ClientServerConfiguration extends Configuration {
         server.addProvidedPort(sp2);
 
         //Connector
-        RPCConnector rpc = new RPCConnector();
+        RPCConnector rpc = new RPCConnector("RPC");
         addComponent(rpc);
         FromRole f1 = new FromRole();
         FromRole f2 = new FromRole();

@@ -20,7 +20,9 @@ public class FromAttachmentLink extends AttachmentLink {
 
     @Override
     public void update(Observable o, Object arg) {
-        //We assume that the observable if the ProvidedPort port, just "notify" the role
-        this.role.onReceive();
+        //We assume that the observable is the ProvidedPort port, just "notify" the role
+
+        Request request = (Request)arg;
+        this.role.onReceive(request);
     }
 }

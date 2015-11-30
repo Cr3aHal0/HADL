@@ -9,7 +9,8 @@ import io.github.cr3ahal0.hadl.m2.RequiredPort;
  */
 public class ClientComponent extends Component {
 
-    public ClientComponent() {
+    public ClientComponent(String name) {
+        super(name);
 
         ProvidedPort p1 = new ProvidedPort();
         ProvidedPort p2 = new ProvidedPort();

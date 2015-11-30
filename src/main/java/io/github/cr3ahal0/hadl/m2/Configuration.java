@@ -8,6 +8,7 @@ import java.util.Set;
  */
 public class Configuration extends AbstractComponent {
 
+
     /**
      * Set of RequiredPort
      */
@@ -133,6 +134,30 @@ public class Configuration extends AbstractComponent {
      */
     public void removeAttachmentLink(AttachmentLink attachment) {
         this.attachments.remove(attachment);
+    }
+
+    public Set<RequiredPort> getRequiredPorts() {
+        return requiredPorts;
+    }
+
+    public Set<ProvidedPort> getProvidedPorts() {
+        return providedPorts;
+    }
+
+    public Set<AbstractComponent> getComponents() {
+        return components;
+    }
+
+    public Set<RequiredBindingLink> getRequiredBindings() {
+        return requiredBindings;
+    }
+
+    public Set<ProvidedBindingLink> getProvidedBindings() {
+        return providedBindings;
+    }
+
+    public Set<AttachmentLink> getAttachments() {
+        return attachments;
     }
 
 }

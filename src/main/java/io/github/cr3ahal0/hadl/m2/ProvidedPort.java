@@ -6,4 +6,8 @@ package io.github.cr3ahal0.hadl.m2;
 public class ProvidedPort extends Port {
 
 
+    @Override
+    public void onReceive() {
+
+    }
 }

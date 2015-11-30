@@ -5,16 +5,13 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public class SimpleGlue {
 
+    public SimpleGlue(Role from, Role to) {
+        this.from = from;
+        this.to = to;
+    }
+
     private Role from;
 
     private Role to;
-
-    public void setFrom(Role from) {
-        this.from = from;
-    }
-
-    public void setTo(Role to) {
-        this.to = to;
-    }
 
 }

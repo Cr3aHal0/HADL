@@ -9,6 +9,14 @@ public class ClientServerConfiguration extends Configuration {
 
     public ClientServerConfiguration() {
 
+        //Conf provider port  ] -->
+        ProvidedPort pp = new ProvidedPort();
+        this.addProvidedPort(pp);
+
+        //Conf required port ] <--
+        RequiredPort rp = new RequiredPort();
+        this.addRequiredPort(rp);
+
         //Client component
         ClientComponent client = new ClientComponent();
         addComponent(client);
@@ -50,42 +58,36 @@ public class ClientServerConfiguration extends Configuration {
         rpc.addFromRole(f2);
 
         // Glue ---> ... --->
-        SimpleGlue g1 = new SimpleGlue();
-        g1.setFrom(f1);
-        g1.setTo(t1);
-
+        SimpleGlue g1 = new SimpleGlue(f1, t1);
         rpc.addSimpleGlue(g1);
 
         //Glue <--- ... <---
-        SimpleGlue g2 = new SimpleGlue();
-        g1.setFrom(f2);
-        g1.setTo(t2);
-
+        SimpleGlue g2 = new SimpleGlue(f2, t2);
         rpc.addSimpleGlue(g2);
 
         //Attachment before ->
-        ClientToRPCAttachmentLink a1 = new ClientToRPCAttachmentLink();
+        ClientToRPCAttachmentLink a1 = new ClientToRPCAttachmentLink(cp1, f1);
         addAttachmentLink(a1);
-        a1.setFrom(cp1);
-        a1.setTo(f1);
 
         //Attachment after ->
-        RPCToServerAttachmentLink a2 = new RPCToServerAttachmentLink();
+        RPCToServerAttachmentLink a2 = new RPCToServerAttachmentLink(t1, sr1);
         addAttachmentLink(a2);
-        a2.setFrom(t1);
-        a2.setTo(sr1);
 
         //Attachment after <-
-        ServerToRPCAttachmentLink a3 = new ServerToRPCAttachmentLink();
+        ServerToRPCAttachmentLink a3 = new ServerToRPCAttachmentLink(sp1, f2);
         addAttachmentLink(a3);
-        a3.setFrom(sp1);
-        a3.setTo(f2);
 
         //Attachment before <-
-        RPCToClientAttachmentLink a4 = new RPCToClientAttachmentLink();
+        RPCToClientAttachmentLink a4 = new RPCToClientAttachmentLink(t2, cr1);
         addAttachmentLink(a4);
-        a4.setFrom(t2);
-        a4.setTo(cr1);
+
+        //Provided Binding link ] -->
+        ProvidedBindingLink pbl = new ProvidedBindingLink(pp, sp2);
+        addProvidedBindingLink(pbl);
+
+        //Required Binding Link ] <--
+        RequiredBindingLink rbl = new RequiredBindingLink(rp, sr2);
+        addRequiredBindingLink(rbl);
     }
 
 }

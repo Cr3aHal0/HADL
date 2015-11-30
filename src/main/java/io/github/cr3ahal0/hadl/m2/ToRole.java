@@ -5,4 +5,8 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public class ToRole extends Role {
 
+    @Override
+    public void onReceive() {
+
+    }
 }

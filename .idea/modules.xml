@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HADL.iml" filepath="$PROJECT_DIR$/HADL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadl.iml" filepath="$PROJECT_DIR$/hadl.iml" />
     </modules>
   </component>
 </project>
-

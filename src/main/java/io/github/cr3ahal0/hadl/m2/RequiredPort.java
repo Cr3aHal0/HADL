@@ -5,5 +5,8 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public class RequiredPort extends Port {
 
+    @Override
+    public void onReceive() {
 
+    }
 }

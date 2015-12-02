@@ -1,6 +1,24 @@
 package io.github.cr3ahal0.hadl.m1.global.serverconf;
 
-import io.github.cr3ahal0.hadl.m2.*;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.clearancerequest.ClearanceRequest;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.connectionmanager.ConnectionManager;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.connectionmanager.SecurityCheckProvidedPort;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.connectionmanager.SecurityCheckRequiredPort;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.database.Database;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.securitymanager.SecurityAuthProvidedPort;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.securitymanager.SecurityAuthRequiredPort;
+import io.github.cr3ahal0.hadl.m1.global.serverconf.securitymanager.SecurityManager;
+import io.github.cr3ahal0.hadl.m2.attachment.FromAttachmentLink;
+import io.github.cr3ahal0.hadl.m2.attachment.ToAttachmentLink;
+import io.github.cr3ahal0.hadl.m2.binding.ProvidedBindingLink;
+import io.github.cr3ahal0.hadl.m2.binding.RequiredBindingLink;
+import io.github.cr3ahal0.hadl.m2.components.configuration.Configuration;
+import io.github.cr3ahal0.hadl.m2.components.connector.Connector;
+import io.github.cr3ahal0.hadl.m2.components.connector.SimpleGlue;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -13,28 +31,28 @@ public class ServerConfiguration extends Configuration {
         // From ConnectionManager ...
         ConnectionManager connectionManager = new ConnectionManager("Connection Manager");
 
-        ProvidedPort securityCheckProvidedPort = new ProvidedPort();
-        RequiredPort securityCheckRequiredPort = new RequiredPort();
-        connectionManager.addProvidedPort(securityCheckProvidedPort);
-        connectionManager.addRequiredPort(securityCheckRequiredPort);
+        SecurityCheckProvidedPort[] securityCheckProvidedPorts = (SecurityCheckProvidedPort[])connectionManager.getProvidedPorts().toArray();
+        SecurityCheckRequiredPort[] securityCheckRequiredPorts = (SecurityCheckRequiredPort[])connectionManager.getProvidedPorts().toArray();
+        SecurityCheckProvidedPort securityCheckProvidedPort = securityCheckProvidedPorts[0];
+        SecurityCheckRequiredPort securityCheckRequiredPort = securityCheckRequiredPorts[0];
+
 
         // ClearanceRequest Connector
-        Connector clearanceRequest = new Connector("Clearance Request");
+        ClearanceRequest clearanceRequest = new ClearanceRequest("Clearance Request");
         addComponent(clearanceRequest);
 
-        //From role --> [
-        FromRole clearanceRequestFromRole1 = new FromRole();
-        //From role ] <--
-        FromRole clearanceRequestFromRole2 = new FromRole();
-        //To role ] -->
-        ToRole clearanceRequestToRole1 = new ToRole();
-        //To role <-- [
-        ToRole clearanceRequestToRole2 = new ToRole();
+        FromRole[] clearanceRequestFromRoles = (FromRole[])clearanceRequest.getFromRoles().toArray();
+        ToRole[] clearanceRequestToRoles = (ToRole[])clearanceRequest.getToRoles().toArray();
 
-        clearanceRequest.addFromRole(clearanceRequestFromRole1);
-        clearanceRequest.addFromRole(clearanceRequestFromRole2);
-        clearanceRequest.addToRole(clearanceRequestToRole1);
-        clearanceRequest.addToRole(clearanceRequestToRole2);
+        //From role --> [
+        FromRole clearanceRequestFromRole1 = clearanceRequestFromRoles[0];
+        //From role ] <--
+        FromRole clearanceRequestFromRole2 = clearanceRequestFromRoles[1];
+        //To role ] -->
+        ToRole clearanceRequestToRole1 = clearanceRequestToRoles[0];
+        //To role <-- [
+        ToRole clearanceRequestToRole2 = clearanceRequestToRoles[1];
+
 
         //ConnectionManager --> Attachment
         FromAttachmentLink clearanceRequestFromAttachment = new FromAttachmentLink(securityCheckProvidedPort, clearanceRequestFromRole1);
@@ -54,10 +72,11 @@ public class ServerConfiguration extends Configuration {
         SecurityManager securityManager = new SecurityManager("Security Manager");
         addComponent(securityManager);
 
-        RequiredPort securityAuthRequiredPort = new RequiredPort();
-        ProvidedPort securityAuthProvidedPort = new ProvidedPort();
-        securityManager.addProvidedPort(securityAuthProvidedPort);
-        securityManager.addRequiredPort(securityAuthRequiredPort);
+        SecurityAuthProvidedPort[] securityAuthProvidedPorts = (SecurityAuthProvidedPort[])connectionManager.getProvidedPorts().toArray();
+        SecurityAuthRequiredPort[] securityAuthRequiredPorts = (SecurityAuthRequiredPort[])connectionManager.getRequiredPorts().toArray();
+
+        SecurityAuthRequiredPort securityAuthRequiredPort = securityAuthRequiredPorts[0];
+        SecurityAuthProvidedPort securityAuthProvidedPort = securityAuthProvidedPorts[0];
 
         //SecurityManager --> Attachment
         FromAttachmentLink securityManagerFromAttachment = new FromAttachmentLink(securityAuthProvidedPort, clearanceRequestFromRole2);
@@ -67,6 +86,7 @@ public class ServerConfiguration extends Configuration {
         ToAttachmentLink securityManagerToAttachment = new ToAttachmentLink(clearanceRequestToRole2, securityAuthRequiredPort);
         addAttachmentLink(securityManagerToAttachment);
 
+        /*
         // ---
         RequiredPort checkQueryRequiredPort = new RequiredPort();
         ProvidedPort checkQueryProvidedPort = new ProvidedPort();
@@ -192,5 +212,6 @@ public class ServerConfiguration extends Configuration {
 
         RequiredBindingLink requiredBindingLink = new RequiredBindingLink(serverConfRequiredPort, externalSocketRequiredPort);
         addRequiredBindingLink(requiredBindingLink);
+        */
     }
 }

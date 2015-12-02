@@ -1,6 +1,6 @@
 package io.github.cr3ahal0.hadl.m1.global;
 
-import io.github.cr3ahal0.hadl.m2.Component;
+import io.github.cr3ahal0.hadl.m2.components.component.Component;
 
 import java.util.HashMap;
 import java.util.Map;

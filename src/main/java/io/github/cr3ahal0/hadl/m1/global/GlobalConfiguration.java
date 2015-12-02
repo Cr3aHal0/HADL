@@ -2,9 +2,15 @@ package io.github.cr3ahal0.hadl.m1.global;
 
 import io.github.cr3ahal0.hadl.m1.global.clientserver.ClientServerConfiguration;
 import io.github.cr3ahal0.hadl.m1.global.serverconf.ServerConfiguration;
-import io.github.cr3ahal0.hadl.m2.*;
-
-import java.util.Set;
+import io.github.cr3ahal0.hadl.m2.attachment.FromAttachmentLink;
+import io.github.cr3ahal0.hadl.m2.attachment.ToAttachmentLink;
+import io.github.cr3ahal0.hadl.m2.components.configuration.Configuration;
+import io.github.cr3ahal0.hadl.m2.components.connector.Connector;
+import io.github.cr3ahal0.hadl.m2.components.connector.SimpleGlue;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -28,19 +34,17 @@ public class GlobalConfiguration extends Configuration {
         Connector c = new Connector("Client-Server to Server Configuration");
         addComponent(c);
 
-        //From role --> [
-        FromRole fr1 = new FromRole();
-        //From role ] <--
-        FromRole fr2 = new FromRole();
-        //To role ] -->
-        ToRole tr1 = new ToRole();
-        //To role <-- [
-        ToRole tr2 = new ToRole();
+        FromRole[] connectorFromRoles = (FromRole[])c.getFromRoles().toArray();
+        ToRole[] connectorToRoles = (ToRole[])c.getToRoles().toArray();
 
-        c.addFromRole(fr1);
-        c.addFromRole(fr2);
-        c.addToRole(tr1);
-        c.addToRole(tr2);
+        //From role --> [
+        FromRole fr1 = connectorFromRoles[0];
+        //From role ] <--
+        FromRole fr2 = connectorFromRoles[1];
+        //To role ] -->
+        ToRole tr1 = connectorToRoles[0];
+        //To role <-- [
+        ToRole tr2 = connectorToRoles[1];
 
         //Glue
         SimpleGlue g1 = new SimpleGlue(fr1, tr1);

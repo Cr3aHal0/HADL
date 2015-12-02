@@ -1,7 +1,7 @@
 package io.github.cr3ahal0.hadl.m1.global.serverconf;
 
-import io.github.cr3ahal0.hadl.m2.Request;
-import io.github.cr3ahal0.hadl.m2.Service;
+import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.service.Service;
 
 /**
  * Created by E130110Z on 30/11/15.

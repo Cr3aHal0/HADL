@@ -1,6 +1,22 @@
 package io.github.cr3ahal0.hadl.m1.global.clientserver;
 
-import io.github.cr3ahal0.hadl.m2.*;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.RPC.RPCConnector;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.attachment.RPCToClientAttachmentLink;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.attachment.RPCToServerAttachmentLink;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.client.ClientComponent;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.client.ClientToRPCAttachmentLink;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.configuration.ConfProvidedPort;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.configuration.ConfRequiredPort;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.server.ServerComponent;
+import io.github.cr3ahal0.hadl.m1.global.clientserver.server.ServerToRPCAttachmentLink;
+import io.github.cr3ahal0.hadl.m2.binding.ProvidedBindingLink;
+import io.github.cr3ahal0.hadl.m2.binding.RequiredBindingLink;
+import io.github.cr3ahal0.hadl.m2.components.configuration.Configuration;
+import io.github.cr3ahal0.hadl.m2.components.connector.SimpleGlue;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
+import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -11,47 +27,47 @@ public class ClientServerConfiguration extends Configuration {
         super(name);
 
         //Conf provider port  ] -->
-        ProvidedPort pp = new ProvidedPort();
+        ConfProvidedPort pp = new ConfProvidedPort();
         this.addProvidedPort(pp);
 
         //Conf required port ] <--
-        RequiredPort rp = new RequiredPort();
+        ConfRequiredPort rp = new ConfRequiredPort();
         this.addRequiredPort(rp);
 
         //Client component
         ClientComponent client = new ClientComponent("Client");
         addComponent(client);
 
-        RequiredPort cr1 = new RequiredPort();
-        RequiredPort cr2 = new RequiredPort();
-        ProvidedPort cp1 = new ProvidedPort();
-        ProvidedPort cp2 = new ProvidedPort();
-
-        addProvidedPort(cp1);
-        addProvidedPort(cp2);
-        client.addRequiredPort(cr1);
-        client.addRequiredPort(cr2);
+        RequiredPort[] clientsRequiredPort = (RequiredPort[])client.getRequiredPorts().toArray();
+        ProvidedPort[] clientsProvidedPort = (ProvidedPort[])client.getProvidedPorts().toArray();
+        RequiredPort cr1 = clientsRequiredPort[0];
+        RequiredPort cr2 = clientsRequiredPort[1];
+        ProvidedPort cp1 = clientsProvidedPort[0];
+        ProvidedPort cp2 = clientsProvidedPort[1];
 
         //Server
         ServerComponent server = new ServerComponent("Server");
         addComponent(server);
-        RequiredPort sr1 = new RequiredPort();
-        RequiredPort sr2 = new RequiredPort();
-        ProvidedPort sp1 = new ProvidedPort();
-        ProvidedPort sp2 = new ProvidedPort();
 
-        server.addRequiredPort(sr1);
-        server.addRequiredPort(sr2);
-        server.addProvidedPort(sp1);
-        server.addProvidedPort(sp2);
+        RequiredPort[] serverRequiredPort = (RequiredPort[])server.getRequiredPorts().toArray();
+        ProvidedPort[] serverProvidedPort = (ProvidedPort[])server.getProvidedPorts().toArray();
+
+        RequiredPort sr1 = serverRequiredPort[0];
+        RequiredPort sr2 = serverRequiredPort[1];
+        ProvidedPort sp1 = serverProvidedPort[0];
+        ProvidedPort sp2 = serverProvidedPort[1];
 
         //Connector
         RPCConnector rpc = new RPCConnector("RPC");
         addComponent(rpc);
-        FromRole f1 = new FromRole();
-        FromRole f2 = new FromRole();
-        ToRole t1 = new ToRole();
-        ToRole t2 = new ToRole();
+
+        FromRole[] rpcFromRoles = (FromRole[])rpc.getFromRoles().toArray();
+        ToRole[] rpcToRoles = (ToRole[])rpc.getToRoles().toArray();
+
+        FromRole f1 = rpcFromRoles[0];
+        FromRole f2 = rpcFromRoles[1];
+        ToRole t1 = rpcToRoles[0];
+        ToRole t2 = rpcToRoles[1];
 
         rpc.addToRole(t1);
         rpc.addToRole(t2);

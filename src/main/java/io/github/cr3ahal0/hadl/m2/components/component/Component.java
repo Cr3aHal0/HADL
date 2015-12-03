@@ -2,6 +2,7 @@ package io.github.cr3ahal0.hadl.m2.components.component;
 
 import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
+import io.github.cr3ahal0.hadl.m2.ComponentKind;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
@@ -46,16 +47,18 @@ public abstract class Component extends AbstractComponent {
         services = new HashMap<String,Service>();
     }
 
+    public void sendRequest(Request request, ProvidedPort port) {
+        //Default implementation
+        port.onSend(request);
+    }
+
+    public void handleRequest(Request request) {
+        //To implement
+    }
+
     @Override
-    public boolean handleRequest(Request request) throws Exception {
-
-        if (request.getTarget().getName().equals(getName())) {
-            //We better check some things
-            //...
-
-            return true;
-        }
-        return false;
+    public ComponentKind getComponentKind() {
+        return ComponentKind.COMPONENT;
     }
 
     /**
@@ -147,4 +150,5 @@ public abstract class Component extends AbstractComponent {
         }
         return port;
     }
+
 }

@@ -13,11 +13,6 @@ public class ClientProvidedPortOne extends ProvidedPort {
     }
 
     @Override
-    public void onSend(Request request) {
-
-    }
-
-    @Override
     public String getName() {
         return name;
     }

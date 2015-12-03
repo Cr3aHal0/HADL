@@ -125,9 +125,6 @@ public class ServerConfiguration extends Configuration {
             ProvidedPort securityManagementProvidedPort = database.getProvidedPort("securityManagementProvidedPort");
             RequiredPort securityManagementRequiredPort = database.getRequiredPort("securityManagementRequiredPort");
 
-            ExecuteQueryService service = new ExecuteQueryService("ExecuteQueryService");
-            database.addService(service);
-
             //Database --> Attachment
             FromAttachmentLink securityManagementFromAttachment = new FromAttachmentLink("securityManagementFromAttachment", securityManagementProvidedPort, securityQueryFromRole2);
             addAttachmentLink(securityManagementFromAttachment);

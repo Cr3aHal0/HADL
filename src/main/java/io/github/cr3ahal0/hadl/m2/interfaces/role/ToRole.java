@@ -11,4 +11,11 @@ public abstract class ToRole extends Role implements ISendingInterface {
     public ToRole(String name) {
         super(name);
     }
+
+    @Override
+    public void onSend(Request request) {
+        System.out.println("A request is being sent from "+ getName());
+        setChanged();
+        notifyObservers(request);
+    }
 }

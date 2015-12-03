@@ -13,9 +13,9 @@ public class Request {
 
     RequestKind kind;
 
-    String service;
-
     String data;
+
+    private String service;
 
     private Component origin;
 
@@ -39,6 +39,10 @@ public class Request {
         this.definitive = false;
 
         steps = new ArrayList<Interface>();
+    }
+
+    public String getService() {
+        return service;
     }
 
     public void setData(String data) {

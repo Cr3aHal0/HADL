@@ -1,10 +1,14 @@
 package io.github.cr3ahal0.hadl.m2.components.configuration;
 
 import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
+import io.github.cr3ahal0.hadl.m1.global.ServiceRegistry;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
+import io.github.cr3ahal0.hadl.m2.ComponentKind;
 import io.github.cr3ahal0.hadl.m2.attachment.AttachmentLink;
 import io.github.cr3ahal0.hadl.m2.binding.ProvidedBindingLink;
 import io.github.cr3ahal0.hadl.m2.binding.RequiredBindingLink;
+import io.github.cr3ahal0.hadl.m2.components.component.Component;
+import io.github.cr3ahal0.hadl.m2.exception.NoSuchServiceException;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
@@ -62,11 +66,14 @@ public abstract class Configuration extends AbstractComponent {
     }
 
     @Override
-    public boolean handleRequest(Request request) throws Exception {
-        //TODO
-        return false;
+    public void handleRequest(Request request) {
+        //Default behaviour is to let requests crossing a connector
     }
 
+    @Override
+    public ComponentKind getComponentKind() {
+        return ComponentKind.CONFIGURATION;
+    }
 
     /**
      * add a RequiredPort
@@ -108,6 +115,7 @@ public abstract class Configuration extends AbstractComponent {
      */
     public void addComponent(AbstractComponent component) {
         this.components.put(component.getName(), component);
+        component.setParent(this);
     }
 
     /**
@@ -214,4 +222,32 @@ public abstract class Configuration extends AbstractComponent {
         return attachments;
     }
 
+    /**
+     * Returns what port should be used to verify the route to the given service name
+     * @param serviceName the name of the service to reach
+     * @return the port to contact
+     */
+    public Configuration getConfigurationOwningService(String serviceName) throws NoSuchServiceException {
+        Configuration togo = null;
+
+        //First, check if we know the service as a local service
+        Component component = ServiceRegistry.find(serviceName);
+        if (component == null) {
+            throw new NoSuchServiceException();
+        }
+
+        return (Configuration)component.getParent();
+    }
+
+    /*
+     - WIP -
+    public void getRouteForService(String serviceName) throws NoSuchServiceException {
+        Configuration config = getConfigurationOwningService(serviceName);
+
+        //if the targeted configuration is not the current configuration, find the component to contact
+        if (!config.getName().equals(getName())) {
+
+        }
+    }
+    */
 }

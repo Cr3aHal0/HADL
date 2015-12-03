@@ -1,8 +1,11 @@
 package io.github.cr3ahal0.hadl.m1.global.clientserver.server;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
+import io.github.cr3ahal0.hadl.m1.request.RequestType;
 import io.github.cr3ahal0.hadl.m2.components.component.Component;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
+import io.github.cr3ahal0.hadl.m2.request.Request;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -25,4 +28,25 @@ public class ServerComponent extends Component {
         addProvidedPort(p2);
 
     }
+
+    @Override
+    public void handleRequest(Request request) {
+
+        System.out.println("Handling a request from "+ request.getOrigin().getName() +" at "+ getName());
+        if (request.getOrigin().getName().equals("Client")) {
+            if (request.getService().equals(RequestType.DATABASE_AUTHENTICATION) ||
+                request.getService().equals(RequestType.DATABASE_SQL_QUERY)) {
+
+                //If this is a specific service, transfer it to the Internal Server Configuration
+                try {
+                    getProvidedPort("sp2").onSend(request);
+                    System.out.println("Transfert of request from "+ request.getOrigin().getName() + " by "+ getName());
+                } catch (NonExistingInterfaceException e) {
+                    System.out.println("Unable to transfert request by "+ getName());
+                }
+
+            }
+        }
+    }
+
 }

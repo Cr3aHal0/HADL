@@ -2,6 +2,7 @@ package io.github.cr3ahal0.hadl.m2.components.connector;
 
 import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
+import io.github.cr3ahal0.hadl.m2.ComponentKind;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
@@ -45,9 +46,13 @@ public class Connector extends AbstractComponent {
     }
 
     @Override
-    public boolean handleRequest(Request request) throws Exception {
+    public void handleRequest(Request request) {
         //Default behaviour is to let requests crossing a connector
-        return false;
+    }
+
+    @Override
+    public ComponentKind getComponentKind() {
+        return ComponentKind.CONNECTOR;
     }
 
     /**

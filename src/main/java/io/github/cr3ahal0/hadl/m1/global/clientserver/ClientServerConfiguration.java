@@ -28,7 +28,7 @@ public class ClientServerConfiguration extends Configuration {
         super(name);
 
         try {
-            //Conf provider port  ] -->
+            //Conf provided port  ] -->
             ConfProvidedPort pp = new ConfProvidedPort("ConfProvidedPort");
             this.addProvidedPort(pp);
 

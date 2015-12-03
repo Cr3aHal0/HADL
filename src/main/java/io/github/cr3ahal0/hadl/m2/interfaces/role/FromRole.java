@@ -12,6 +12,12 @@ public abstract class FromRole extends Role implements IReceivingInterface {
         super(name);
     }
 
+    @Override
+    public void onReceive(Request request) {
+        System.out.println("A request has been received by the Role "+ getName() +" and will be redirected.");
+        setChanged();
+        notifyObservers(request);
+    }
 
     /*
     @Override

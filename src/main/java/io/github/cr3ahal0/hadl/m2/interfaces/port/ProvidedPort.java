@@ -11,6 +11,13 @@ public abstract class ProvidedPort extends Port implements ISendingInterface {
         super(name);
     }
 
+    @Override
+    public void onSend(Request request) {
+        //Default implementation
+        System.out.println("A request has been received and will be sent by "+ getName());
+        this.setChanged();
+        this.notifyObservers(request);
+    }
 
     /*
     @Override

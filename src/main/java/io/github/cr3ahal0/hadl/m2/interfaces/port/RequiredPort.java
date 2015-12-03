@@ -11,4 +11,10 @@ public abstract class RequiredPort extends Port implements IReceivingInterface {
     public RequiredPort(String name) {
         super(name);
     }
+
+    public void onReceive(Request request) {
+        System.out.println("A request has been received by "+ getName() +" and will be transfered to "+ getParent().getName());
+        getParent().handleRequest(request);
+    }
+
 }

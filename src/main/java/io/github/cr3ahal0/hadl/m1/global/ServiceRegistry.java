@@ -13,7 +13,7 @@ public class ServiceRegistry {
     private static Map<String, Component> services;
 
     static {
-        Map<String, Component> services = new HashMap<String, Component>();
+        services = new HashMap<String, Component>();
     }
 
     private ServiceRegistry() {}
@@ -28,7 +28,7 @@ public class ServiceRegistry {
             services.put(service, component);
             return true;
         }
-        System.out.println("You have already deployed this service for component '"+ component.getName() +"'");
+        System.out.println("You have already deployed this service for component '"+ component +"'");
         return false;
     }
 

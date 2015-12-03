@@ -24,6 +24,7 @@ public class SimpleGlue implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
+        System.out.println("[Glue]Receiving request from "+ from.getName() +" and redirecting it to "+ to.getName());
         this.to.onSend((Request) o);
     }
 

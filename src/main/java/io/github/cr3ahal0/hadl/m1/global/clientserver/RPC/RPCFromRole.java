@@ -18,8 +18,4 @@ public class RPCFromRole extends FromRole {
         return name;
     }
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

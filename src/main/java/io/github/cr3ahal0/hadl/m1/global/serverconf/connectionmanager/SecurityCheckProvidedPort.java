@@ -8,11 +8,9 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class SecurityCheckProvidedPort extends ProvidedPort {
 
-    String name;
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public SecurityCheckProvidedPort(String name) {
+        super(name);
     }
 
     @Override

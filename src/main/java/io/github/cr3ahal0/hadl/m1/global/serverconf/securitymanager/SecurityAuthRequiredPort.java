@@ -8,11 +8,9 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class SecurityAuthRequiredPort extends RequiredPort {
 
-    String name;
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public SecurityAuthRequiredPort(String name) {
+        super(name);
     }
 
     @Override

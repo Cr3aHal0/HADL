@@ -1,5 +1,6 @@
 package io.github.cr3ahal0.hadl.m1.global.clientserver;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m1.global.clientserver.RPC.RPCConnector;
 import io.github.cr3ahal0.hadl.m1.global.clientserver.attachment.RPCToClientAttachmentLink;
 import io.github.cr3ahal0.hadl.m1.global.clientserver.attachment.RPCToServerAttachmentLink;
@@ -26,85 +27,77 @@ public class ClientServerConfiguration extends Configuration {
     public ClientServerConfiguration(String name) {
         super(name);
 
-        //Conf provider port  ] -->
-        ConfProvidedPort pp = new ConfProvidedPort();
-        this.addProvidedPort(pp);
+        try {
+            //Conf provider port  ] -->
+            ConfProvidedPort pp = new ConfProvidedPort("ConfProvidedPort");
+            this.addProvidedPort(pp);
 
-        //Conf required port ] <--
-        ConfRequiredPort rp = new ConfRequiredPort();
-        this.addRequiredPort(rp);
+            //Conf required port ] <--
+            ConfRequiredPort rp = new ConfRequiredPort("ConfRequiredPort");
+            this.addRequiredPort(rp);
 
-        //Client component
-        ClientComponent client = new ClientComponent("Client");
-        addComponent(client);
+            //Client component
+            ClientComponent client = new ClientComponent("Client");
+            addComponent(client);
 
-        RequiredPort[] clientsRequiredPort = (RequiredPort[])client.getRequiredPorts().toArray();
-        ProvidedPort[] clientsProvidedPort = (ProvidedPort[])client.getProvidedPorts().toArray();
-        RequiredPort cr1 = clientsRequiredPort[0];
-        RequiredPort cr2 = clientsRequiredPort[1];
-        ProvidedPort cp1 = clientsProvidedPort[0];
-        ProvidedPort cp2 = clientsProvidedPort[1];
+            RequiredPort cr1 = client.getRequiredPort("cr1");
+            RequiredPort cr2 = client.getRequiredPort("cr2");
+            ProvidedPort cp1 = client.getProvidedPort("cp1");
+            ProvidedPort cp2 = client.getProvidedPort("cp2");
 
-        //Server
-        ServerComponent server = new ServerComponent("Server");
-        addComponent(server);
+            //Server
+            ServerComponent server = new ServerComponent("Server");
+            addComponent(server);
 
-        RequiredPort[] serverRequiredPort = (RequiredPort[])server.getRequiredPorts().toArray();
-        ProvidedPort[] serverProvidedPort = (ProvidedPort[])server.getProvidedPorts().toArray();
+            RequiredPort sr1 = server.getRequiredPort("sr1");
+            RequiredPort sr2 = server.getRequiredPort("sr2");
+            ProvidedPort sp1 = server.getProvidedPort("sp1");
+            ProvidedPort sp2 = server.getProvidedPort("sp2");
 
-        RequiredPort sr1 = serverRequiredPort[0];
-        RequiredPort sr2 = serverRequiredPort[1];
-        ProvidedPort sp1 = serverProvidedPort[0];
-        ProvidedPort sp2 = serverProvidedPort[1];
+            //Connector
+            RPCConnector rpc = new RPCConnector("RPC");
+            addComponent(rpc);
 
-        //Connector
-        RPCConnector rpc = new RPCConnector("RPC");
-        addComponent(rpc);
+            FromRole f1 = rpc.getFromRole("f1");
+            FromRole f2 = rpc.getFromRole("f2");
+            ToRole t1 = rpc.getToRole("t1");
+            ToRole t2 = rpc.getToRole("t2");
 
-        FromRole[] rpcFromRoles = (FromRole[])rpc.getFromRoles().toArray();
-        ToRole[] rpcToRoles = (ToRole[])rpc.getToRoles().toArray();
+            // Glue ---> ... --->
+            SimpleGlue g1 = new SimpleGlue(f1, t1);
+            rpc.addSimpleGlue(g1);
 
-        FromRole f1 = rpcFromRoles[0];
-        FromRole f2 = rpcFromRoles[1];
-        ToRole t1 = rpcToRoles[0];
-        ToRole t2 = rpcToRoles[1];
+            //Glue <--- ... <---
+            SimpleGlue g2 = new SimpleGlue(f2, t2);
+            rpc.addSimpleGlue(g2);
 
-        rpc.addToRole(t1);
-        rpc.addToRole(t2);
-        rpc.addFromRole(f1);
-        rpc.addFromRole(f2);
+            //Attachment before ->
+            ClientToRPCAttachmentLink a1 = new ClientToRPCAttachmentLink("ClientToRPCAttachmentLink", cp1, f1);
+            addAttachmentLink(a1);
 
-        // Glue ---> ... --->
-        SimpleGlue g1 = new SimpleGlue(f1, t1);
-        rpc.addSimpleGlue(g1);
+            //Attachment after ->
+            RPCToServerAttachmentLink a2 = new RPCToServerAttachmentLink("RPCToServerAttachmentLink", t1, sr1);
+            addAttachmentLink(a2);
 
-        //Glue <--- ... <---
-        SimpleGlue g2 = new SimpleGlue(f2, t2);
-        rpc.addSimpleGlue(g2);
+            //Attachment after <-
+            ServerToRPCAttachmentLink a3 = new ServerToRPCAttachmentLink("ServerToRPCAttachmentLink", sp1, f2);
+            addAttachmentLink(a3);
 
-        //Attachment before ->
-        ClientToRPCAttachmentLink a1 = new ClientToRPCAttachmentLink(cp1, f1);
-        addAttachmentLink(a1);
+            //Attachment before <-
+            RPCToClientAttachmentLink a4 = new RPCToClientAttachmentLink("RPCToClientAttachmentLink", t2, cr1);
+            addAttachmentLink(a4);
 
-        //Attachment after ->
-        RPCToServerAttachmentLink a2 = new RPCToServerAttachmentLink(t1, sr1);
-        addAttachmentLink(a2);
+            //Provided Binding link ] -->
+            ProvidedBindingLink pbl = new ProvidedBindingLink(pp, sp2);
+            addProvidedBindingLink(pbl);
 
-        //Attachment after <-
-        ServerToRPCAttachmentLink a3 = new ServerToRPCAttachmentLink(sp1, f2);
-        addAttachmentLink(a3);
-
-        //Attachment before <-
-        RPCToClientAttachmentLink a4 = new RPCToClientAttachmentLink(t2, cr1);
-        addAttachmentLink(a4);
-
-        //Provided Binding link ] -->
-        ProvidedBindingLink pbl = new ProvidedBindingLink(pp, sp2);
-        addProvidedBindingLink(pbl);
-
-        //Required Binding Link ] <--
-        RequiredBindingLink rbl = new RequiredBindingLink(rp, sr2);
-        addRequiredBindingLink(rbl);
+            //Required Binding Link ] <--
+            RequiredBindingLink rbl = new RequiredBindingLink(rp, sr2);
+            addRequiredBindingLink(rbl);
+        } catch (NonExistingInterfaceException e) {
+            System.out.println("One or more interfaces do not exist");
+            e.printStackTrace();
+        }
     }
 
 }

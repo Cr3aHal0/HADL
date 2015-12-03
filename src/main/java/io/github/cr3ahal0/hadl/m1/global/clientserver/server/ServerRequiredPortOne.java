@@ -8,11 +8,8 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class ServerRequiredPortOne extends RequiredPort {
 
-    String name;
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public ServerRequiredPortOne(String name) {
+        super(name);
     }
 
     @Override

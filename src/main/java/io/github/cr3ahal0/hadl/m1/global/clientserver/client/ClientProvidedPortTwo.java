@@ -8,11 +8,8 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class ClientProvidedPortTwo extends ProvidedPort {
 
-    String name;
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public ClientProvidedPortTwo(String name) {
+        super(name);
     }
 
     @Override

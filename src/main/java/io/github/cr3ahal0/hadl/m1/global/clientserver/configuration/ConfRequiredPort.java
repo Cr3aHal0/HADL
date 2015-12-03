@@ -9,11 +9,9 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class ConfRequiredPort extends RequiredPort {
 
-    String name;
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public ConfRequiredPort(String name) {
+        super(name);
     }
 
     @Override

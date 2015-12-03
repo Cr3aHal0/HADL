@@ -1,11 +1,14 @@
 package io.github.cr3ahal0.hadl.m2.components.connector;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -16,12 +19,12 @@ public class Connector extends AbstractComponent {
     /**
      * set of FromRole
      */
-    Set<FromRole> fromRoles;
+    Map<String, FromRole> fromRoles;
 
     /**
      * set of ToRole
      */
-    Set<ToRole> toRoles;
+    Map<String, ToRole> toRoles;
 
     /**
      * set of Glue
@@ -35,8 +38,8 @@ public class Connector extends AbstractComponent {
 
         super(name);
 
-        fromRoles = new HashSet<FromRole>();
-        toRoles = new HashSet<ToRole>();
+        fromRoles = new HashMap<String, FromRole>();
+        toRoles = new HashMap<String, ToRole>();
         simpleGlues = new HashSet<SimpleGlue>();
 
     }
@@ -52,12 +55,20 @@ public class Connector extends AbstractComponent {
      * @param fromRole a FromRole
      */
     public void addFromRole(FromRole fromRole) {
-        fromRoles.add(fromRole);
+        fromRoles.put(fromRole.getName(),fromRole);
         fromRole.setParent(this);
     }
 
-    public Set<FromRole> getFromRoles() {
+    public Map<String, FromRole> getFromRoles() {
         return fromRoles;
+    }
+
+    public FromRole getFromRole(String name) throws NonExistingInterfaceException {
+        FromRole role = fromRoles.get(name);
+        if (role == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return role;
     }
 
     /**
@@ -73,12 +84,20 @@ public class Connector extends AbstractComponent {
      * @param toRole a ToRole
      */
     public void addToRole(ToRole toRole) {
-        toRoles.add(toRole);
+        toRoles.put(toRole.getName(),toRole);
         toRole.setParent(this);
     }
 
-    public Set<ToRole> getToRoles() {
+    public Map<String, ToRole> getToRoles() {
         return toRoles;
+    }
+
+    public ToRole getToRole(String name) throws NonExistingInterfaceException {
+        ToRole role = toRoles.get(name);
+        if (role == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return role;
     }
 
     /**

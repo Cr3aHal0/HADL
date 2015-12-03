@@ -15,7 +15,10 @@ public class ToAttachmentLink extends AttachmentLink {
 
     private ToRole role;
 
-    public ToAttachmentLink(ToRole role, RequiredPort port) {
+    private String name;
+
+    public ToAttachmentLink(String name, ToRole role, RequiredPort port) {
+        this.name = name;
         this.role = role;
         this.port = port;
 
@@ -25,5 +28,10 @@ public class ToAttachmentLink extends AttachmentLink {
     @Override
     public void update(Observable o, Object arg) {
         this.port.onReceive((Request)arg);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

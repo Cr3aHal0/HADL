@@ -9,6 +9,12 @@ public class Database extends Component {
 
     public Database(String name) {
         super(name);
+
+        addProvidedPort(new SecurityManagementProvidedPort("securityManagementProvidedPort"));
+        addRequiredPort(new SecurityManagementRequiredPort("securityManagementRequiredPort"));
+
+        addProvidedPort(new QueryProvidedPort("queryProvidedPort"));
+        addRequiredPort(new QueryRequiredPort("queryRequiredPort"));
     }
 
 }

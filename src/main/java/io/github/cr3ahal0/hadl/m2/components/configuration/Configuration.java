@@ -1,5 +1,6 @@
 package io.github.cr3ahal0.hadl.m2.components.configuration;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
 import io.github.cr3ahal0.hadl.m2.attachment.AttachmentLink;
 import io.github.cr3ahal0.hadl.m2.binding.ProvidedBindingLink;
@@ -8,7 +9,9 @@ import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -20,17 +23,17 @@ public abstract class Configuration extends AbstractComponent {
     /**
      * Set of RequiredPort
      */
-    private Set<RequiredPort> requiredPorts;
+    private Map<String, RequiredPort> requiredPorts;
 
     /**
      * Set of ProvidedPort
      */
-    private Set<ProvidedPort> providedPorts;
+    private Map<String, ProvidedPort> providedPorts;
 
     /**
      * Set of AbstractComponent (Configuration, Connector, Component)
      */
-    private Set<AbstractComponent> components;
+    private Map<String, AbstractComponent> components;
 
     /**
      * Set of RequiredBindingLink (from the configuration to the internal component)
@@ -50,11 +53,12 @@ public abstract class Configuration extends AbstractComponent {
     public Configuration(String name) {
         super(name);
 
-        requiredPorts = new HashSet<RequiredPort>();
-        providedPorts = new HashSet<ProvidedPort>();
-        components = new HashSet<AbstractComponent>();
+        requiredPorts = new HashMap<String, RequiredPort>();
+        providedPorts = new HashMap<String, ProvidedPort>();
+        components = new HashMap<String, AbstractComponent>();
         requiredBindings = new HashSet<RequiredBindingLink>();
         providedBindings = new HashSet<ProvidedBindingLink>();
+        attachments = new HashSet<AttachmentLink>();
     }
 
     @Override
@@ -69,7 +73,7 @@ public abstract class Configuration extends AbstractComponent {
      * @param requiredPort RequiredPort
      */
     public void addRequiredPort(RequiredPort requiredPort) {
-        requiredPorts.add(requiredPort);
+        requiredPorts.put(requiredPort.getName(), requiredPort);
         requiredPort.setParent(this);
     }
 
@@ -86,7 +90,7 @@ public abstract class Configuration extends AbstractComponent {
      * @param providedPort ProvidedPort
      */
     public void addProvidedPort(ProvidedPort providedPort) {
-        providedPorts.add(providedPort);
+        providedPorts.put(providedPort.getName(), providedPort);
         providedPort.setParent(this);
     }
 
@@ -103,7 +107,7 @@ public abstract class Configuration extends AbstractComponent {
      * @param component AbstractComponent
      */
     public void addComponent(AbstractComponent component) {
-        this.components.add(component);
+        this.components.put(component.getName(), component);
     }
 
     /**
@@ -162,16 +166,40 @@ public abstract class Configuration extends AbstractComponent {
         this.attachments.remove(attachment);
     }
 
-    public Set<RequiredPort> getRequiredPorts() {
+    public Map<String, RequiredPort> getRequiredPorts() {
         return requiredPorts;
     }
 
-    public Set<ProvidedPort> getProvidedPorts() {
+    public RequiredPort getRequiredPort(String name) throws NonExistingInterfaceException {
+        RequiredPort port = requiredPorts.get(name);
+        if (port == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return port;
+    }
+
+    public Map<String, ProvidedPort> getProvidedPorts() {
         return providedPorts;
     }
 
-    public Set<AbstractComponent> getComponents() {
+    public ProvidedPort getProvidedPort(String name) throws NonExistingInterfaceException {
+        ProvidedPort port = providedPorts.get(name);
+        if (port == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return port;
+    }
+
+    public Map<String, AbstractComponent> getComponents() {
         return components;
+    }
+
+    public AbstractComponent getComponent(String name) throws NonExistingInterfaceException{
+        AbstractComponent component = components.get(name);
+        if (component == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return component;
     }
 
     public Set<RequiredBindingLink> getRequiredBindings() {

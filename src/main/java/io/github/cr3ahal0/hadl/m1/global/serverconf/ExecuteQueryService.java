@@ -8,13 +8,17 @@ import io.github.cr3ahal0.hadl.m2.service.Service;
  */
 public class ExecuteQueryService extends Service {
 
+    public ExecuteQueryService(String name) {
+        super(name);
+    }
+
     @Override
     public Object onCalled() {
         return null;
     }
 
     @Override
-    public void onReceive(Request request) {
-
+    public String getName() {
+        return name;
     }
 }

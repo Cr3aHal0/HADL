@@ -8,4 +8,7 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public abstract class ToRole extends Role implements ISendingInterface {
 
+    public ToRole(String name) {
+        super(name);
+    }
 }

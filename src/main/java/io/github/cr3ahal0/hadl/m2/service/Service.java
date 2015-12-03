@@ -8,6 +8,10 @@ import io.github.cr3ahal0.hadl.m2.interfaces.Interface;
  */
 public abstract class Service extends Interface implements INamedElement {
 
+    public Service(String name) {
+        super(name);
+    }
+
     public abstract Object onCalled();
 
 }

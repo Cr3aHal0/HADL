@@ -1,6 +1,8 @@
 package io.github.cr3ahal0.hadl.m1.global;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m1.global.clientserver.ClientServerConfiguration;
+import io.github.cr3ahal0.hadl.m1.global.connector.ClientServerToServerConf;
 import io.github.cr3ahal0.hadl.m1.global.serverconf.ServerConfiguration;
 import io.github.cr3ahal0.hadl.m2.attachment.FromAttachmentLink;
 import io.github.cr3ahal0.hadl.m2.attachment.ToAttachmentLink;
@@ -20,67 +22,68 @@ public class GlobalConfiguration extends Configuration {
     public GlobalConfiguration(String name) {
         super(name);
 
-        //Client Server Configuration
-        ClientServerConfiguration csc = new ClientServerConfiguration("Client Server Configuration");
-        addComponent(csc);
+        try {
+            //Client Server Configuration
+            ClientServerConfiguration csc = new ClientServerConfiguration("ClientServerConfiguration");
+            addComponent(csc);
 
-        //Required ports
-        RequiredPort[] crp = (RequiredPort[])csc.getRequiredPorts().toArray();
+            //Required ports
+            RequiredPort crp = csc.getRequiredPort("ConfRequiredPort");
 
-        //Provided ports
-        ProvidedPort[] cpp = (ProvidedPort[])csc.getProvidedPorts().toArray();
+            //Provided ports
+            ProvidedPort cpp = csc.getProvidedPort("ConfProvidedPort");
 
-        //Connector
-        Connector c = new Connector("Client-Server to Server Configuration");
-        addComponent(c);
+            //Connector
+            Connector c = new ClientServerToServerConf("ClientServerToServerConfiguration");
+            addComponent(c);
 
-        FromRole[] connectorFromRoles = (FromRole[])c.getFromRoles().toArray();
-        ToRole[] connectorToRoles = (ToRole[])c.getToRoles().toArray();
+            //From role --> [
+            FromRole fr1 = c.getFromRole("ClientServerFromRole");
+            //From role ] <--
+            FromRole fr2 = c.getFromRole("ServerConfFromRole");
+            //To role ] -->
+            ToRole tr1 = c.getToRole("ClientServerToRole");
+            //To role <-- [
+            ToRole tr2 = c.getToRole("ServerConfToRole");
 
-        //From role --> [
-        FromRole fr1 = connectorFromRoles[0];
-        //From role ] <--
-        FromRole fr2 = connectorFromRoles[1];
-        //To role ] -->
-        ToRole tr1 = connectorToRoles[0];
-        //To role <-- [
-        ToRole tr2 = connectorToRoles[1];
+            //Glue
+            SimpleGlue g1 = new SimpleGlue(fr1, tr1);
+            c.addSimpleGlue(g1);
 
-        //Glue
-        SimpleGlue g1 = new SimpleGlue(fr1, tr1);
+            //Glue
+            SimpleGlue g2 = new SimpleGlue(fr2, tr2);
+            c.addSimpleGlue(g2);
 
-        c.addSimpleGlue(g1);
+            //ServerConfiguration
+            ServerConfiguration sc = new ServerConfiguration("ServerConfiguration");
+            addComponent(sc);
 
-        //Glue
-        SimpleGlue g2 = new SimpleGlue(fr2, tr2);
-        c.addSimpleGlue(g2);
+            //Required ports
+            RequiredPort srp = sc.getRequiredPort("serverConfRequiredPort");
 
-        //ServerConfiguration
-        ServerConfiguration sc = new ServerConfiguration("Server Configuration");
-        addComponent(sc);
+            //Provided ports
+            ProvidedPort spp = sc.getProvidedPort("serverConfProvidedPort");
 
-        //Required ports
-        RequiredPort[] srp = (RequiredPort[])sc.getRequiredPorts().toArray();
+            //ClientServer -> Connector
+            FromAttachmentLink fa1 = new FromAttachmentLink("FromClientServerToConnectorAttachment", cpp, fr1);
 
-        //Provided ports
-        ProvidedPort[] spp = (ProvidedPort[])sc.getProvidedPorts().toArray();
+            addAttachmentLink(fa1);
 
-        //ClientServer -> Connector
-        FromAttachmentLink fa1 = new FromAttachmentLink(cpp[0], fr1);
+            //Connector -> ServerConf
+            ToAttachmentLink fa2 = new ToAttachmentLink("ConnectorToServerConfAttachment", tr1, srp);
+            addAttachmentLink(fa2);
 
-        addAttachmentLink(fa1);
+            //ServerConf -> Connector
+            FromAttachmentLink fa3 = new FromAttachmentLink("ServerConfToConnectorAttachment", spp, fr2);
 
-        //Connector -> ServerConf
-        ToAttachmentLink fa2 = new ToAttachmentLink(tr1, srp[0]);
-        addAttachmentLink(fa2);
+            addAttachmentLink(fa3);
 
-        //ServerConf -> Connector
-        FromAttachmentLink fa3 = new FromAttachmentLink(spp[0], fr2);
-
-        addAttachmentLink(fa3);
-
-        //Connector -> ClientServer
-        ToAttachmentLink fa4 = new ToAttachmentLink(tr2, crp[0]);
-        addAttachmentLink(fa4);
+            //Connector -> ClientServer
+            ToAttachmentLink fa4 = new ToAttachmentLink("ConnectorToClientServerAttachment", tr2, crp);
+            addAttachmentLink(fa4);
+        } catch (NonExistingInterfaceException e) {
+            System.out.println("One or more interfaces do not exist and are trying to be linked");
+            e.printStackTrace();
+        }
     }
 }

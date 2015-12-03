@@ -10,4 +10,7 @@ import io.github.cr3ahal0.hadl.m2.interfaces.Interface;
 public abstract class Port extends Interface {
 
 
+    public Port(String name) {
+        super(name);
+    }
 }

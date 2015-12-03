@@ -14,11 +14,11 @@ public class ClientServerToServerConf extends Connector {
     public ClientServerToServerConf(String name) {
         super(name);
 
-        addFromRole(new ClientServerFromRole());
-        addFromRole(new ServerConfFromRole());
+        addFromRole(new ClientServerFromRole("ClientServerFromRole"));
+        addFromRole(new ServerConfFromRole("ServerConfFromRole"));
 
-        addToRole(new ClientServerToRole());
-        addToRole(new ServerConfToRole());
+        addToRole(new ClientServerToRole("ClientServerToRole"));
+        addToRole(new ServerConfToRole("ServerConfToRole"));
 
     }
 }

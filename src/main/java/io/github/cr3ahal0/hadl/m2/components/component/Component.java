@@ -1,12 +1,15 @@
 package io.github.cr3ahal0.hadl.m2.components.component;
 
+import io.github.cr3ahal0.hadl.m1.exception.NonExistingInterfaceException;
 import io.github.cr3ahal0.hadl.m2.AbstractComponent;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.service.Service;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -22,25 +25,25 @@ public abstract class Component extends AbstractComponent {
     /**
      * Set of RequiredPort
      */
-    private Set<RequiredPort> requiredPorts;
+    private Map<String, RequiredPort> requiredPorts;
 
     /**
      * Set of ProvidedPort
      */
-    private Set<ProvidedPort> providedPorts;
+    private Map<String, ProvidedPort> providedPorts;
 
     /**
      * Set of Service
      */
-    private Set<Service> services;
+    private Map<String, Service> services;
 
     public Component(String name) {
         super(name);
 
         technicalConstraints = new HashSet<String>();
-        requiredPorts = new HashSet<RequiredPort>();
-        providedPorts = new HashSet<ProvidedPort>();
-        services = new HashSet<Service>();
+        requiredPorts = new HashMap<String, RequiredPort>();
+        providedPorts = new HashMap<String,ProvidedPort>();
+        services = new HashMap<String,Service>();
     }
 
     @Override
@@ -76,7 +79,7 @@ public abstract class Component extends AbstractComponent {
      * @param requiredPort
      */
     public void  addRequiredPort(RequiredPort requiredPort) {
-        requiredPorts.add(requiredPort);
+        requiredPorts.put(requiredPort.getName(),requiredPort);
         requiredPort.setParent(this);
     }
 
@@ -93,7 +96,7 @@ public abstract class Component extends AbstractComponent {
      * @param providedPort
      */
     public void addProvidedPort(ProvidedPort providedPort) {
-        providedPorts.add(providedPort);
+        providedPorts.put(providedPort.getName(), providedPort);
         providedPort.setParent(this);
     }
 
@@ -110,7 +113,7 @@ public abstract class Component extends AbstractComponent {
      * @param service
      */
     public void addService(Service service) {
-        services.add(service);
+        services.put(service.getName(), service);
     }
 
     /**
@@ -121,11 +124,27 @@ public abstract class Component extends AbstractComponent {
         services.remove(service);
     }
 
-    public Set<RequiredPort> getRequiredPorts() {
+    public Map<String, RequiredPort> getRequiredPorts() {
         return requiredPorts;
     }
 
-    public Set<ProvidedPort> getProvidedPorts() {
+    public RequiredPort getRequiredPort(String name) throws NonExistingInterfaceException {
+        RequiredPort port = requiredPorts.get(name);
+        if (port == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return port;
+    }
+
+    public Map<String, ProvidedPort> getProvidedPorts() {
         return providedPorts;
+    }
+
+    public ProvidedPort getProvidedPort(String name) throws NonExistingInterfaceException {
+        ProvidedPort port = providedPorts.get(name);
+        if (port == null) {
+            throw new NonExistingInterfaceException();
+        }
+        return port;
     }
 }

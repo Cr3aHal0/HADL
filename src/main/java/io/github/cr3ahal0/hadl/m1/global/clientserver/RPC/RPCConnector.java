@@ -12,10 +12,10 @@ public class RPCConnector extends Connector {
     public RPCConnector(String name) {
         super(name);
 
-        FromRole f1 = new RPCFromRole();
-        FromRole f2 = new RPCFromRole();
-        ToRole t1 = new RPCToRole();
-        ToRole t2 = new RPCToRole();
+        FromRole f1 = new RPCFromRole("f1");
+        FromRole f2 = new RPCFromRole("f2");
+        ToRole t1 = new RPCToRole("t1");
+        ToRole t2 = new RPCToRole("t2");
 
         addToRole(t1);
         addToRole(t2);

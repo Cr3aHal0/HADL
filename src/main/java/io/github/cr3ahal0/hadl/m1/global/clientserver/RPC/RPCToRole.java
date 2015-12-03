@@ -8,11 +8,9 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class RPCToRole extends ToRole {
 
-    String name;
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public RPCToRole(String name) {
+        super(name);
     }
 
     @Override

@@ -8,4 +8,7 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public abstract class RequiredPort extends Port implements IReceivingInterface {
 
+    public RequiredPort(String name) {
+        super(name);
+    }
 }

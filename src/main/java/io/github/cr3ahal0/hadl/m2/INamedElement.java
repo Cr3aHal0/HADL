@@ -5,8 +5,6 @@ package io.github.cr3ahal0.hadl.m2;
  */
 public interface INamedElement {
 
-    public void setName(String name);
-
     public String getName();
 
 }

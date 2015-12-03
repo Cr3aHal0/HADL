@@ -15,7 +15,10 @@ public class FromAttachmentLink extends AttachmentLink {
 
     private FromRole role;
 
-    public FromAttachmentLink(ProvidedPort port, FromRole role) {
+    protected String name;
+
+    public FromAttachmentLink(String name, ProvidedPort port, FromRole role) {
+        this.name = name;
         this.port = port;
         this.role = role;
 
@@ -28,5 +31,10 @@ public class FromAttachmentLink extends AttachmentLink {
 
         Request request = (Request)arg;
         this.role.onReceive(request);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

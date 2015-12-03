@@ -13,6 +13,12 @@ public abstract class Interface extends Observable implements INamedElement {
 
     private AbstractComponent parent;
 
+    protected String name;
+
+    public Interface(String name) {
+        this.name = name;
+    }
+
     public void setParent(AbstractComponent parent) {
         this.parent = parent;
     }

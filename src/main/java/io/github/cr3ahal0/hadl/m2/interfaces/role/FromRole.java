@@ -8,6 +8,10 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public abstract class FromRole extends Role implements IReceivingInterface {
 
+    public FromRole(String name) {
+        super(name);
+    }
+
 
     /*
     @Override

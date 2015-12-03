@@ -8,4 +8,7 @@ import io.github.cr3ahal0.hadl.m2.interfaces.Interface;
  */
 public abstract class Role extends Interface {
 
+    public Role(String name) {
+        super(name);
+    }
 }

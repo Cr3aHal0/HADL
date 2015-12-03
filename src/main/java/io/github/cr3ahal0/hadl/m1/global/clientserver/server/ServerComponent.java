@@ -12,14 +12,14 @@ public class ServerComponent extends Component {
     public ServerComponent(String name) {
         super(name);
 
-        RequiredPort r1 = new ServerRequiredPortOne();
-        RequiredPort r2 = new ServerRequiredPortTwo();
+        RequiredPort r1 = new ServerRequiredPortOne("sr1");
+        RequiredPort r2 = new ServerRequiredPortTwo("sr2");
 
         addRequiredPort(r1);
         addRequiredPort(r2);
 
-        ProvidedPort p1 = new ServerProvidedPortOne();
-        ProvidedPort p2 = new ServerProvidedPortTwo();
+        ProvidedPort p1 = new ServerProvidedPortOne("sp1");
+        ProvidedPort p2 = new ServerProvidedPortTwo("sp2");
 
         addProvidedPort(p1);
         addProvidedPort(p2);

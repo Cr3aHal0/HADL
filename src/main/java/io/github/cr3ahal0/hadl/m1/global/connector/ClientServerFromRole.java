@@ -9,11 +9,9 @@ import io.github.cr3ahal0.hadl.m2.request.Request;
  */
 public class ClientServerFromRole extends FromRole {
 
-    String name;
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public ClientServerFromRole(String name) {
+        super(name);
     }
 
     @Override

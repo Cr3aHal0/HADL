@@ -9,16 +9,11 @@ import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
  */
 public class RPCToClientAttachmentLink extends ToAttachmentLink {
 
-    public RPCToClientAttachmentLink(ToRole role, RequiredPort port) {
-        super(role, port);
+    public RPCToClientAttachmentLink(String name, ToRole role, RequiredPort port) {
+        super(name, role, port);
     }
 
     String name;
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public String getName() {

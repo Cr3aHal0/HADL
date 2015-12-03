@@ -11,11 +11,11 @@ public class SecurityManager extends Component{
     public SecurityManager(String name) {
         super(name);
 
-        SecurityAuthProvidedPort c1 = new SecurityAuthProvidedPort();
-        CheckQueryProvidedPort c2 = new CheckQueryProvidedPort();
+        SecurityAuthProvidedPort c1 = new SecurityAuthProvidedPort("securityAuthProvidedPort");
+        CheckQueryProvidedPort c2 = new CheckQueryProvidedPort("checkQueryProvidedPort");
 
-        SecurityAuthRequiredPort c3 = new SecurityAuthRequiredPort();
-        CheckQueryRequiredPort c4 = new CheckQueryRequiredPort();
+        SecurityAuthRequiredPort c3 = new SecurityAuthRequiredPort("securityAuthRequiredPort");
+        CheckQueryRequiredPort c4 = new CheckQueryRequiredPort("checkQueryRequiredPort");
 
         addProvidedPort(c1);
         addProvidedPort(c2);

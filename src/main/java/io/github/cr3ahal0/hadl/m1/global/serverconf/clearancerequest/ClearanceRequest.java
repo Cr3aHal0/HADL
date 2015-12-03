@@ -17,13 +17,13 @@ public class ClearanceRequest extends Connector {
         super(name);
 
         //From role --> [
-        ClearanceRequestFromRole clearanceRequestFromRole1 = new ClearanceRequestFromRole();
+        ClearanceRequestFromRole clearanceRequestFromRole1 = new ClearanceRequestFromRole("clearanceRequestFromRole1");
         //From role ] <--
-        ClearanceRequestFromRole clearanceRequestFromRole2 = new ClearanceRequestFromRole();
+        ClearanceRequestFromRole clearanceRequestFromRole2 = new ClearanceRequestFromRole("clearanceRequestFromRole2");
         //To role ] -->
-        ClearanceRequestToRole clearanceRequestToRole1 = new ClearanceRequestToRole();
+        ClearanceRequestToRole clearanceRequestToRole1 = new ClearanceRequestToRole("clearanceRequestToRole1");
         //To role <-- [
-        ClearanceRequestToRole clearanceRequestToRole2 = new ClearanceRequestToRole();
+        ClearanceRequestToRole clearanceRequestToRole2 = new ClearanceRequestToRole("clearanceRequestToRole2");
 
         addFromRole(clearanceRequestFromRole1);
         addFromRole(clearanceRequestFromRole2);

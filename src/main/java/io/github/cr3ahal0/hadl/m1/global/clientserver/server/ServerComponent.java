@@ -6,6 +6,7 @@ import io.github.cr3ahal0.hadl.m2.components.component.Component;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -47,6 +48,11 @@ public class ServerComponent extends Component {
 
             }
         }
+    }
+
+    @Override
+    public void handleResponse(Response response) throws Exception {
+        System.out.println("IMPLEMENT handleResponse(...) on "+ getName());
     }
 
 }

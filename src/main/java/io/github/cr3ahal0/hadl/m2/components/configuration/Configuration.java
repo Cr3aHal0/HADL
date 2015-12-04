@@ -12,6 +12,7 @@ import io.github.cr3ahal0.hadl.m2.exception.NoSuchServiceException;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -68,6 +69,11 @@ public abstract class Configuration extends AbstractComponent {
     @Override
     public void handleRequest(Request request) {
         //Default behaviour is to let requests crossing a connector
+    }
+
+    @Override
+    public void handleResponse(Response request) {
+        //Default behaviour is to let responses crossing a connector
     }
 
     @Override

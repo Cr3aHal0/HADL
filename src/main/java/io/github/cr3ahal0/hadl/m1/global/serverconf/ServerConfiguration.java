@@ -23,6 +23,7 @@ import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 /**
  * Created by E130110Z on 23/11/15.

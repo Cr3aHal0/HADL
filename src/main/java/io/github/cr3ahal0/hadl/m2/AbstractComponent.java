@@ -2,6 +2,7 @@ package io.github.cr3ahal0.hadl.m2;
 
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 /**
  * Created by E130110Z on 16/11/15.
@@ -31,4 +32,6 @@ public abstract class AbstractComponent {
     public abstract ComponentKind getComponentKind();
 
     public abstract void handleRequest(Request request) throws Exception;
+
+    public abstract void handleResponse(Response response) throws Exception;
 }

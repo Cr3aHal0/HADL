@@ -6,6 +6,7 @@ import io.github.cr3ahal0.hadl.m2.ComponentKind;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -48,6 +49,11 @@ public class Connector extends AbstractComponent {
     @Override
     public void handleRequest(Request request) {
         //Default behaviour is to let requests crossing a connector
+    }
+
+    @Override
+    public void handleResponse(Response response) throws Exception {
+        //Received a response
     }
 
     @Override

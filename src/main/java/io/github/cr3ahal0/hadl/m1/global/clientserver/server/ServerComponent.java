@@ -34,13 +34,13 @@ public class ServerComponent extends Component {
 
         System.out.println("Handling a request from "+ request.getOrigin().getName() +" at "+ getName());
         if (request.getOrigin().getName().equals("Client")) {
-            if (request.getService().equals(RequestType.DATABASE_AUTHENTICATION) ||
-                request.getService().equals(RequestType.DATABASE_SQL_QUERY)) {
+            if (request.getService().equals(RequestType.DATABASE_AUTHENTICATION.toString()) ||
+                request.getService().equals(RequestType.DATABASE_SQL_QUERY.toString())) {
 
                 //If this is a specific service, transfer it to the Internal Server Configuration
                 try {
+                    System.out.println("Transfert a request from "+ request.getOrigin().getName() + " by "+ getName() +" to "+ getProvidedPort("sp2").getName());
                     getProvidedPort("sp2").onSend(request);
-                    System.out.println("Transfert of request from "+ request.getOrigin().getName() + " by "+ getName());
                 } catch (NonExistingInterfaceException e) {
                     System.out.println("Unable to transfert request by "+ getName());
                 }

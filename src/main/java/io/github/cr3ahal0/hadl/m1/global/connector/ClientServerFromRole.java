@@ -19,9 +19,4 @@ public class ClientServerFromRole extends FromRole {
         return name;
     }
 
-
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

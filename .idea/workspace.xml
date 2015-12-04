@@ -3,26 +3,46 @@
   <component name="ChangeListManager">
     <list default="true" id="c22e35c5-0756-46e2-ae73-ac53bf0f777b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/AbstractComponent.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/AbstractComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortOne.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestFromRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestToRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortTwo.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortOne.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortTwo.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerFromRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerToRole.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/component/Component.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/component/Component.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/configuration/Configuration.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/configuration/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/Connector.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/Connector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/FromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/FromRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/Program.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/Program.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/ProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/ProvidedPort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCFromRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCToRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/request/Request.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/request/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryRequiredPort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryFromRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryToRole.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfFromRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfProvidedPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfProvidedPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfRequiredPort.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfRequiredPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfToRole.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortOne.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortOne.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/ServiceRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/ServiceRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortTwo.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortTwo.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryFromRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryFromRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryToRole.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryToRole.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,6 +50,7 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,105 +70,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Program.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/Program.java">
+      <file leaf-file-name="ServerConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="540">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientProvidedPortOne.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state vertical-scroll-proportion="-10.551724" vertical-offset="1224" max-vertical-offset="3043">
+              <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProvidedPort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/ProvidedPort.java">
+      <file leaf-file-name="ConnectionManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.40466926" vertical-offset="370" max-vertical-offset="935">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientServerConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java">
+      <file leaf-file-name="SecurityManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1635">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="629">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleGlue.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SimpleGlue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="544">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RPCFromRole.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCFromRole.java">
+      <file leaf-file-name="ToRole.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FromRole.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/FromRole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="735">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Role.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToRole.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java">
+      <file leaf-file-name="ProvidedBindingLink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/ProvidedBindingLink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="646">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+              <folding>
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequiredBindingLink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/RequiredBindingLink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="595">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerComponent.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java">
+      <file leaf-file-name="AttachmentLink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/AttachmentLink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3030303" vertical-offset="285" max-vertical-offset="795">
-              <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FromAttachmentLink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/FromAttachmentLink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToAttachmentLink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/ToAttachmentLink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="595">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -164,33 +184,48 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/exception/NoSuchServiceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/ComponentKind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/request/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/request/RequestType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/Connector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/AbstractComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/configuration/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/component/Component.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/ServiceRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/request/RequestType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/Program.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCFromRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCToRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/ProvidedPort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/FromRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientRequiredPortTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/configuration/ConfRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerFromRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerToRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfFromRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfToRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestFromRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestToRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthProvidedPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthRequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryFromRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryToRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryFromRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryToRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/exception/UnknownRequestTypeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java" />
       </list>
     </option>
   </component>
@@ -198,10 +233,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="25" />
-    <option name="width" value="1922" />
-    <option name="height" value="1031" />
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,8 +264,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,38 +279,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HADL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HADL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HADL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -691,6 +690,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="m2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attachment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HADL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="m1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -805,7 +838,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clientserver" />
+              <option name="myItemId" value="serverconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="securityQuery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -843,53 +880,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clientserver" />
+              <option name="myItemId" value="serverconf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HADL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clientserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RPC" />
+              <option name="myItemId" value="securitymanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -927,11 +922,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clientserver" />
+              <option name="myItemId" value="serverconf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -969,11 +964,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clientserver" />
+              <option name="myItemId" value="serverconf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="connectionmanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1013,6 +1008,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1095,59 +1092,25 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1193,6 +1156,143 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="io.github.cr3ahal0.hadl.Program" />
@@ -1232,46 +1332,48 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="c22e35c5-0756-46e2-ae73-ac53bf0f777b" name="Default" comment="" />
       <created>1447680830557</created>
+      <option name="number" value="Default" />
       <updated>1447680830557</updated>
       <workItem from="1448818391443" duration="13000000" />
       <workItem from="1449132758277" duration="11398000" />
+      <workItem from="1449163132195" duration="5406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24398000" />
+    <option name="totallyTimeSpent" value="29804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1031" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40350878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4030837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2483871" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1294,12 +1396,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java</url>
           <line>28</line>
           <properties />
@@ -1311,9 +1407,22 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1322,153 +1431,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerToRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfFromRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfToRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestFromRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestToRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryRequiredPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthProvidedPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#342#343#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthRequiredPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#370#371#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ClientServerToServerConf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="56" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ExecuteQueryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfFromRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryProvidedPort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/connector/ServerConfToRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="19" column="116" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/attachment/RPCToClientAttachmentLink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestFromRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/attachment/RPCToServerAttachmentLink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/clearancerequest/ClearanceRequestToRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/INamedElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,244 +1489,256 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="15" column="96" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/GlobalConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfProvidedPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1615">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryProvidedPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/DbQueryRequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketProvidedPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ExternalSocketRequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckProvidedPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/SecurityCheckRequiredPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="480">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/service/Service.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryProvidedPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/ComponentKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/exception/NoSuchServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/request/RequestKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/Connector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1725">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/configuration/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="3165">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/AbstractComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="127" />
-          <folding>
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1982" max-vertical-offset="2745">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/BindingLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/ProvidedBindingLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-          <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/ServiceRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="540">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/request/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/request/RequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/component/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1995">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerRequiredPortOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerProvidedPortOne.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/QueryRequiredPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementProvidedPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/SecurityManagementRequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryProvidedPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/CheckQueryRequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCToRole.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthProvidedPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/RPC/RPCFromRole.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityAuthRequiredPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/Role.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryFromRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQueryToRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryFromRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/sqlquery/SqlQueryToRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ExecuteQueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/ServiceRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/configuration/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="3587">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/configuration/ServerConfRequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/ClientServerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1635">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="1853">
+          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="901">
+          <caret line="41" column="161" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/exception/UnknownRequestTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/component/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="2261">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/RequiredPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="629">
+          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/GlobalConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.4827585" vertical-offset="1130" max-vertical-offset="1615">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1722,54 +1747,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="540">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/client/ClientProvidedPortOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/port/ProvidedPort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securityQuery/SecurityQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/FromRole.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/securitymanager/SecurityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="735">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="629">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/interfaces/role/ToRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/clientserver/server/ServerComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/ProvidedBindingLink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3030303" vertical-offset="285" max-vertical-offset="795">
-          <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="646">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding>
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/binding/RequiredBindingLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="595">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/AttachmentLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/FromAttachmentLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/attachment/ToAttachmentLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="595">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m2/components/connector/SimpleGlue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="544">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/ServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.551724" vertical-offset="1224" max-vertical-offset="3043">
+          <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/cr3ahal0/hadl/m1/global/serverconf/connectionmanager/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40466926" vertical-offset="370" max-vertical-offset="935">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

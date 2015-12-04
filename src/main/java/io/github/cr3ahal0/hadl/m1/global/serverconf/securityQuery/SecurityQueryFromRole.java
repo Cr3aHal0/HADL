@@ -17,8 +17,4 @@ public class SecurityQueryFromRole extends FromRole {
         return name;
     }
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

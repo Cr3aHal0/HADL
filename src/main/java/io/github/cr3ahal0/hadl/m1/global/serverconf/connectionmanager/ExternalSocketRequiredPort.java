@@ -18,8 +18,4 @@ public class ExternalSocketRequiredPort extends RequiredPort {
         return name;
     }
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

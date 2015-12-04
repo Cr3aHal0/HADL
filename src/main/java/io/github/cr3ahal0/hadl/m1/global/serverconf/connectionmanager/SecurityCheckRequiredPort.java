@@ -18,9 +18,5 @@ public class SecurityCheckRequiredPort extends RequiredPort {
     public String getName() {
         return name;
     }
-
-    @Override
-    public void onReceive(Request request) {
-
-    }
+    
 }

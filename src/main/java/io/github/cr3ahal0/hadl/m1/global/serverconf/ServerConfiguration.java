@@ -22,6 +22,7 @@ import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
+import io.github.cr3ahal0.hadl.m2.request.Request;
 
 /**
  * Created by E130110Z on 23/11/15.
@@ -60,10 +61,10 @@ public class ServerConfiguration extends Configuration {
             ToAttachmentLink clearanceRequestToAttachment = new ToAttachmentLink("clearanceRequestToAttachment", clearanceRequestToRole1, securityCheckRequiredPort);
             addAttachmentLink(clearanceRequestToAttachment);
 
-            SimpleGlue clearanceRequestSimpleGlue1 = new SimpleGlue(clearanceRequestFromRole1, clearanceRequestToRole1);
+            SimpleGlue clearanceRequestSimpleGlue1 = new SimpleGlue(clearanceRequestFromRole1, clearanceRequestToRole2);
             clearanceRequest.addSimpleGlue(clearanceRequestSimpleGlue1);
 
-            SimpleGlue clearanceRequestSimpleGlue2 = new SimpleGlue(clearanceRequestFromRole2, clearanceRequestToRole2);
+            SimpleGlue clearanceRequestSimpleGlue2 = new SimpleGlue(clearanceRequestFromRole2, clearanceRequestToRole1);
             clearanceRequest.addSimpleGlue(clearanceRequestSimpleGlue2);
 
             // ... To SecurityManager ...
@@ -99,15 +100,10 @@ public class ServerConfiguration extends Configuration {
             //To role <-- [
             ToRole securityQueryToRole2 = securityQuery.getToRole("securityQueryToRole2");
 
-            securityQuery.addFromRole(securityQueryFromRole1);
-            securityQuery.addFromRole(securityQueryFromRole2);
-            securityQuery.addToRole(securityQueryToRole1);
-            securityQuery.addToRole(securityQueryToRole2);
-
-            SimpleGlue securityQuerySimpleGlue1 = new SimpleGlue(clearanceRequestFromRole1, clearanceRequestToRole1);
+            SimpleGlue securityQuerySimpleGlue1 = new SimpleGlue(securityQueryFromRole1, securityQueryToRole1);
             securityQuery.addSimpleGlue(securityQuerySimpleGlue1);
 
-            SimpleGlue securityQuerySimpleGlue2 = new SimpleGlue(clearanceRequestFromRole2, clearanceRequestToRole2);
+            SimpleGlue securityQuerySimpleGlue2 = new SimpleGlue(securityQueryFromRole2, securityQueryToRole2);
             securityQuery.addSimpleGlue(securityQuerySimpleGlue2);
 
             //SecurityManager --> Attachment
@@ -195,4 +191,5 @@ public class ServerConfiguration extends Configuration {
             e.printStackTrace();
         }
     }
+
 }

@@ -52,7 +52,7 @@ public abstract class Component extends AbstractComponent {
         port.onSend(request);
     }
 
-    public void handleRequest(Request request) {
+    public void handleRequest(Request request) throws Exception {
         //To implement
     }
 

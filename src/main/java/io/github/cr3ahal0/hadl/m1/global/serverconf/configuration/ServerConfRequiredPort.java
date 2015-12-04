@@ -18,8 +18,4 @@ public class ServerConfRequiredPort extends RequiredPort {
         return name;
     }
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

@@ -20,8 +20,4 @@ public class ServerConfFromRole extends FromRole {
     }
 
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

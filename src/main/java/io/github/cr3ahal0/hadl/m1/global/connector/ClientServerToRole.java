@@ -19,8 +19,4 @@ public class ClientServerToRole extends ToRole {
         return name;
     }
 
-    @Override
-    public void onSend(Request request) {
-
-    }
 }

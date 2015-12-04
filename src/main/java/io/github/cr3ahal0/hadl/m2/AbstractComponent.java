@@ -30,5 +30,5 @@ public abstract class AbstractComponent {
 
     public abstract ComponentKind getComponentKind();
 
-    public abstract void handleRequest(Request request);
+    public abstract void handleRequest(Request request) throws Exception;
 }

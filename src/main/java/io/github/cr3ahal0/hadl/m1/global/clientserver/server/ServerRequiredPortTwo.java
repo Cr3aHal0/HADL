@@ -17,8 +17,4 @@ public class ServerRequiredPortTwo extends RequiredPort {
         return name;
     }
 
-    @Override
-    public void onReceive(Request request) {
-
-    }
 }

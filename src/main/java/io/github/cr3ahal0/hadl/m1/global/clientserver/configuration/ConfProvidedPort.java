@@ -17,8 +17,4 @@ public class ConfProvidedPort extends ProvidedPort {
         return name;
     }
 
-    @Override
-    public void onSend(Request request) {
-
-    }
 }

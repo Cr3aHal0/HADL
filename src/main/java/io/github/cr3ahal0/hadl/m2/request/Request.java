@@ -25,6 +25,10 @@ public class Request {
 
     boolean definitive;
 
+    private String credentialsUsername;
+
+    private String credentialsPassword;
+
     public Request(Component origin, Component target, String service) {
         this(origin, target, service, RequestKind.SYNCHRONEOUS);
     }
@@ -39,6 +43,22 @@ public class Request {
         this.definitive = false;
 
         steps = new ArrayList<Interface>();
+    }
+
+    public void setCredentialsUsername(String credentialsUsername) {
+        this.credentialsUsername = credentialsUsername;
+    }
+
+    public String getCredentialsUsername() {
+        return this.credentialsUsername;
+    }
+
+    public void setCredentialsPassword(String credentialsPassword) {
+        this.credentialsPassword = credentialsPassword;
+    }
+
+    public String getCredentialsPassword() {
+        return credentialsPassword;
     }
 
     public String getService() {
@@ -71,5 +91,9 @@ public class Request {
 
     public void setTarget(Component target) {
         this.target = target;
+    }
+
+    public String getData() {
+        return data;
     }
 }

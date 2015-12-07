@@ -19,7 +19,10 @@ public class Program {
             ClientServerConfiguration csc = (ClientServerConfiguration)gc.getComponent("ClientServerConfiguration");
 
             ClientComponent cc = (ClientComponent)csc.getComponent("Client");
-            Request request = new Request(cc, null, RequestType.DATABASE_AUTHENTICATION.toString());
+            Request request = new Request(cc, null, RequestType.DATABASE_SQL_QUERY.toString());
+            request.setCredentialsUsername("maxime");
+            request.setCredentialsPassword("mypassword");
+
             cc.sendRequest(request, cc.getProvidedPort("cp1"));
 
         } catch (NonExistingInterfaceException e) {

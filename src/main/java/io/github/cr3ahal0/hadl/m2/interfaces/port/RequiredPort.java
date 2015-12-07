@@ -17,8 +17,9 @@ public abstract class RequiredPort extends Port implements IReceivingInterface {
     @Override
     public void onReceive(Request request) {
         if (getParent().getComponentKind().equals(ComponentKind.COMPONENT)) {
-            System.out.println("A request has been received by "+ getName() +" and will be transfered to "+ getParent().getName());
+            //System.out.println("A request has been received by "+ getName() +" and will be transfered to "+ getParent().getName());
             try {
+                System.out.println(getName() +" => ");
                 getParent().handleRequest(request);
             } catch (Exception e) {
                 System.out.println("/!\\ An error occured while trying to transfer a request from "+ getName() +" to "+ getParent().getName());
@@ -27,7 +28,8 @@ public abstract class RequiredPort extends Port implements IReceivingInterface {
         }
         else if (getParent().getComponentKind().equals(ComponentKind.CONFIGURATION))
         {
-            System.out.println("A request has been received by "+ getName() +" and will be transfered to the appropriate binded port");
+            System.out.println(getName() +" => ");
+            //System.out.println("A request has been received by "+ getName() +" and will be transfered to the appropriate binded port");
             setChanged();
             notifyObservers(request);
         }
@@ -36,8 +38,9 @@ public abstract class RequiredPort extends Port implements IReceivingInterface {
     @Override
     public void onReceive(Response response) {
         if (getParent().getComponentKind().equals(ComponentKind.COMPONENT)) {
-            System.out.println("A response has been received by "+ getName() +" and will be transfered to "+ getParent().getName());
+            //System.out.println("A response has been received by "+ getName() +" and will be transfered to "+ getParent().getName());
             try {
+                System.out.println(getName() +" => ");
                 getParent().handleResponse(response);
             } catch (Exception e) {
                 System.out.println("/!\\ An error occured while trying to transfer a response from "+ getName() +" to "+ getParent().getName());
@@ -46,7 +49,8 @@ public abstract class RequiredPort extends Port implements IReceivingInterface {
         }
         else if (getParent().getComponentKind().equals(ComponentKind.CONFIGURATION))
         {
-            System.out.println("A response has been received by "+ getName() +" and will be transfered to the appropriate binded port");
+            System.out.println(getName() +" => ");
+            //System.out.println("A response has been received by "+ getName() +" and will be transfered to the appropriate binded port");
             setChanged();
             notifyObservers(response);
         }

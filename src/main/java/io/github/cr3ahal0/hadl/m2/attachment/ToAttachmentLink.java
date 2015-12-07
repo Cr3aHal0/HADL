@@ -3,6 +3,7 @@ package io.github.cr3ahal0.hadl.m2.attachment;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.ToRole;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 import java.util.Observable;
 
@@ -15,7 +16,7 @@ public class ToAttachmentLink extends AttachmentLink {
 
     private ToRole role;
 
-    private String name;
+    protected String name;
 
     public ToAttachmentLink(String name, ToRole role, RequiredPort port) {
         this.name = name;
@@ -27,7 +28,13 @@ public class ToAttachmentLink extends AttachmentLink {
 
     @Override
     public void update(Observable o, Object arg) {
-        this.port.onReceive((Request)arg);
+        System.out.println(getName() +" => ");
+        if (arg instanceof Request) {
+            this.port.onReceive((Request) arg);
+        }
+        else if (arg instanceof Response) {
+            this.port.onReceive((Response) arg);
+        }
     }
 
     @Override

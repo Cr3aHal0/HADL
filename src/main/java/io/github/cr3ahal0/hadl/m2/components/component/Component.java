@@ -6,6 +6,7 @@ import io.github.cr3ahal0.hadl.m2.ComponentKind;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 import io.github.cr3ahal0.hadl.m2.service.Service;
 
 import java.util.HashMap;
@@ -17,6 +18,8 @@ import java.util.Set;
  * Created by E130110Z on 16/11/15.
  */
 public abstract class Component extends AbstractComponent {
+
+    private HashMap<Request, Response> requests;
 
     /**
      * Set of technical constraints
@@ -45,15 +48,28 @@ public abstract class Component extends AbstractComponent {
         requiredPorts = new HashMap<String, RequiredPort>();
         providedPorts = new HashMap<String,ProvidedPort>();
         services = new HashMap<String,Service>();
+
+        requests = new HashMap<Request, Response>();
     }
 
     public void sendRequest(Request request, ProvidedPort port) {
-        //Default implementation
+        System.out.println(getName() +" => ");
+        requests.put(request, null);
         port.onSend(request);
+    }
+
+    public void sendResponse(Response response, ProvidedPort port) {
+        System.out.println(getName() +" => ");
+        requests.put(response.getRequest(), response);
+        port.onSend(response);
     }
 
     public void handleRequest(Request request) throws Exception {
         //To implement
+    }
+
+    public void handleResponse(Response response) throws Exception {
+        requests.put(response.getRequest(), response);
     }
 
     @Override

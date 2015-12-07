@@ -11,6 +11,12 @@ public class Response {
 
     private ResponseCode code;
 
+    private String data;
+
+    public Response (Request request) {
+        this.request = request;
+    }
+
     public void setRequest(Request request) {
         this.request = request;
     }
@@ -26,4 +32,13 @@ public class Response {
     public ResponseCode getCode() {
         return this.code;
     }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getData() {
+        return this.data;
+    }
+
 }

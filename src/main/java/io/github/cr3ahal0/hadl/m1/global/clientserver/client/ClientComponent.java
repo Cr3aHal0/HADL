@@ -28,7 +28,9 @@ public class ClientComponent extends Component {
 
     @Override
     public void handleResponse(Response response) throws Exception {
-        System.out.println(getName() + "received response !");
+        System.out.println(getName() +" => END ");
+        System.out.println(getName() + "received response ! With result : "+ response.getData());
+        //System.out.println("Response content for service "+ response.getRequest().getService() + " and code "+ response.getCode() + " : "+ response.getData());
     }
 
 }

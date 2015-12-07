@@ -8,6 +8,9 @@ import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.response.Response;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by E130110Z on 23/11/15.
  */
@@ -33,14 +36,15 @@ public class ServerComponent extends Component {
     @Override
     public void handleRequest(Request request) {
 
-        System.out.println("Handling a request from "+ request.getOrigin().getName() +" at "+ getName());
+        //System.out.println("Handling a request from "+ request.getOrigin().getName() +" at "+ getName());
+        System.out.println(getName() +" => ");
         if (request.getOrigin().getName().equals("Client")) {
             if (request.getService().equals(RequestType.DATABASE_AUTHENTICATION.toString()) ||
                 request.getService().equals(RequestType.DATABASE_SQL_QUERY.toString())) {
 
                 //If this is a specific service, transfer it to the Internal Server Configuration
                 try {
-                    System.out.println("Transfert a request from "+ request.getOrigin().getName() + " by "+ getName() +" to "+ getProvidedPort("sp2").getName());
+                    //System.out.println("Transfert a request from "+ request.getOrigin().getName() + " by "+ getName() +" to "+ getProvidedPort("sp2").getName());
                     getProvidedPort("sp2").onSend(request);
                 } catch (NonExistingInterfaceException e) {
                     System.out.println("Unable to transfert request by "+ getName());
@@ -52,7 +56,8 @@ public class ServerComponent extends Component {
 
     @Override
     public void handleResponse(Response response) throws Exception {
-        System.out.println("IMPLEMENT handleResponse(...) on "+ getName());
+        //System.out.println("IMPLEMENT handleResponse(...) on "+ getName());
+        sendResponse(response, getProvidedPort("sp1"));
     }
 
 }

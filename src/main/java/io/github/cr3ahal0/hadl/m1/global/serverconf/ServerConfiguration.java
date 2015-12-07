@@ -144,10 +144,10 @@ public class ServerConfiguration extends Configuration {
             ToRole sqlQueryToRole2 = sqlQuery.getToRole("sqlQueryToRole2");
 
 
-            SimpleGlue sqlQuerySimpleGlue1 = new SimpleGlue(sqlQueryFromRole1, sqlQueryToRole1);
+            SimpleGlue sqlQuerySimpleGlue1 = new SimpleGlue(sqlQueryFromRole1, sqlQueryToRole2);
             sqlQuery.addSimpleGlue(sqlQuerySimpleGlue1);
 
-            SimpleGlue sqlQuerySimpleGlue2 = new SimpleGlue(sqlQueryFromRole2, sqlQueryToRole2);
+            SimpleGlue sqlQuerySimpleGlue2 = new SimpleGlue(sqlQueryFromRole2, sqlQueryToRole1);
             sqlQuery.addSimpleGlue(sqlQuerySimpleGlue2);
 
             ProvidedPort queryProvidedPort = database.getProvidedPort("queryProvidedPort");

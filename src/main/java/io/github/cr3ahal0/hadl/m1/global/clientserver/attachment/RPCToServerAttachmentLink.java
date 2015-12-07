@@ -12,8 +12,6 @@ public class RPCToServerAttachmentLink extends ToAttachmentLink {
         super(name, role, port);
     }
 
-    String name;
-
     @Override
     public String getName() {
         return name;

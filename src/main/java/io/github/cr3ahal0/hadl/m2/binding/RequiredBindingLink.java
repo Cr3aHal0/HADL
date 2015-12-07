@@ -2,6 +2,7 @@ package io.github.cr3ahal0.hadl.m2.binding;
 
 import io.github.cr3ahal0.hadl.m2.request.Request;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.RequiredPort;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 import java.util.Observable;
 
@@ -29,6 +30,12 @@ public class RequiredBindingLink extends BindingLink {
 
     @Override
     public void update(Observable observable, Object o) {
-        this.componentRequiredPort.onReceive((Request)o);
+        System.out.println(("binding => "));
+        if (o instanceof Request) {
+            this.componentRequiredPort.onReceive((Request) o);
+        }
+        else if (o instanceof Response) {
+            this.componentRequiredPort.onReceive((Response) o);
+        }
     }
 }

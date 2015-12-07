@@ -14,15 +14,16 @@ public abstract class ProvidedPort extends Port implements ISendingInterface {
 
     @Override
     public void onSend(Request request) {
-        //Default implementation
-        System.out.println("A request has been received and will be sent by "+ getName());
+        System.out.println(getName() +" => ");
+        //System.out.println("A request has been received and will be sent by "+ getName());
         this.setChanged();
         this.notifyObservers(request);
     }
 
     @Override
     public void onSend(Response response) {
-        System.out.println("A response has been received and will be sent by "+ getName());
+        System.out.println(getName() +" => ");
+        //System.out.println("A response has been received and will be sent by "+ getName());
         this.setChanged();
         this.notifyObservers(response);
     }

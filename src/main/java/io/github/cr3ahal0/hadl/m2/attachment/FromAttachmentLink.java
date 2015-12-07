@@ -3,6 +3,7 @@ package io.github.cr3ahal0.hadl.m2.attachment;
 import io.github.cr3ahal0.hadl.m2.interfaces.role.FromRole;
 import io.github.cr3ahal0.hadl.m2.interfaces.port.ProvidedPort;
 import io.github.cr3ahal0.hadl.m2.request.Request;
+import io.github.cr3ahal0.hadl.m2.response.Response;
 
 import java.util.Observable;
 
@@ -29,8 +30,16 @@ public class FromAttachmentLink extends AttachmentLink {
     public void update(Observable o, Object arg) {
         //We assume that the observable is the ProvidedPort port, just "notify" the role
 
-        Request request = (Request)arg;
-        this.role.onReceive(request);
+        System.out.println(getName() +" => ");
+        if (arg instanceof Request) {
+            Request request = (Request) arg;
+            this.role.onReceive(request);
+        }
+        else if (arg instanceof Response) {
+            Response response = (Response) arg;
+            this.role.onReceive(response);
+        }
+
     }
 
     @Override
